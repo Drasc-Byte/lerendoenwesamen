@@ -315,13 +315,6 @@ button:hover {
   background: #fff;
 }
 
-.question-list {
-  margin: 0;
-  padding-left: 1.1rem;
-  display: grid;
-  gap: 0.35rem;
-}
-
 @media (max-width: 760px) {
   .track-switch {
     grid-template-columns: 1fr;

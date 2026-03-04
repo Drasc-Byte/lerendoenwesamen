@@ -82,10 +82,10 @@ const refs = {
   boaWrittenQuestion: document.getElementById("boa-written-question"),
   boaWrittenAnswer: document.getElementById("boa-written-answer"),
   boaWrittenFeedback: document.getElementById("boa-written-feedback"),
+  boaCheckWritten: document.getElementById("boa-check-written"),
   boaShowModel: document.getElementById("boa-show-model"),
   boaWrittenNext: document.getElementById("boa-written-next"),
-  boaWrittenReset: document.getElementById("boa-written-reset"),
-  boaQuestionList: document.getElementById("boa-question-list")
+  boaWrittenReset: document.getElementById("boa-written-reset")
 };
 
 function setDataStatus(message) {
@@ -115,6 +115,62 @@ function switchBoaMode(mode) {
   renderBoa();
 }
 
+function normalizeText(value) {
+  return String(value || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9\s]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function tokenize(value) {
+  return normalizeText(value).split(" ").filter(Boolean);
+}
+
+const STOPWORDS = new Set([
+  "de", "het", "een", "en", "van", "voor", "met", "dat", "die", "dit", "dan", "als", "bij", "aan", "in", "op",
+  "te", "tot", "om", "of", "is", "zijn", "wordt", "door", "ook", "niet", "wel", "na", "er", "je", "hij", "zij"
+]);
+
+function levenshteinDistance(a, b) {
+  if (a === b) return 0;
+  const dp = Array.from({ length: a.length + 1 }, () => Array(b.length + 1).fill(0));
+  for (let i = 0; i <= a.length; i += 1) dp[i][0] = i;
+  for (let j = 0; j <= b.length; j += 1) dp[0][j] = j;
+  for (let i = 1; i <= a.length; i += 1) {
+    for (let j = 1; j <= b.length; j += 1) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      dp[i][j] = Math.min(
+        dp[i - 1][j] + 1,
+        dp[i][j - 1] + 1,
+        dp[i - 1][j - 1] + cost
+      );
+    }
+  }
+  return dp[a.length][b.length];
+}
+
+function tokenCloseMatch(modelToken, userToken) {
+  if (modelToken === userToken) return true;
+  if (modelToken.length >= 6 && userToken.includes(modelToken.slice(0, 5))) return true;
+  if (userToken.length >= 6 && modelToken.includes(userToken.slice(0, 5))) return true;
+  const dist = levenshteinDistance(modelToken, userToken);
+  return dist <= 1;
+}
+
+function extractModelKeywords(questionObj) {
+  if (Array.isArray(questionObj.keywords) && questionObj.keywords.length > 0) {
+    return questionObj.keywords.map((k) => normalizeText(k)).filter((k) => k.length >= 3);
+  }
+
+  const words = tokenize(questionObj.modelAnswer || "")
+    .filter((w) => w.length >= 4 && !STOPWORDS.has(w));
+  const unique = [...new Set(words)];
+  return unique.slice(0, 14);
+}
+
 function mergeBoaData(...payloads) {
   const mcMap = new Map();
   const writtenMap = new Map();
@@ -137,15 +193,6 @@ function mergeBoaData(...payloads) {
   }
 
   return { mc: [...mcMap.values()], written: [...writtenMap.values()] };
-}
-
-function renderBoaQuestionList() {
-  refs.boaQuestionList.innerHTML = "";
-  state.boa.data.mc.forEach((q) => {
-    const li = document.createElement("li");
-    li.textContent = q.question;
-    refs.boaQuestionList.append(li);
-  });
 }
 
 function setBoaMeta() {
@@ -251,7 +298,7 @@ function renderBoaWritten() {
   }
 
   refs.boaWrittenQuestion.textContent = q.question;
-  refs.boaWrittenFeedback.textContent = "Formuleer je antwoord en controleer met het voorbeeldantwoord.";
+  refs.boaWrittenFeedback.textContent = "Formuleer je antwoord en klik op 'Controleer antwoord'.";
 }
 
 function showBoaModelAnswer() {
@@ -260,6 +307,50 @@ function showBoaModelAnswer() {
   const q = m.data.written[qIdx];
   if (!q) return;
   refs.boaWrittenFeedback.textContent = `Voorbeeldantwoord: ${q.modelAnswer}`;
+}
+
+function checkBoaWrittenAnswer() {
+  const m = state.boa;
+  const qIdx = m.written.order[m.written.index];
+  const q = m.data.written[qIdx];
+  if (!q) return;
+
+  const userAnswer = refs.boaWrittenAnswer.value || "";
+  const userTokens = tokenize(userAnswer).filter((t) => t.length >= 4 && !STOPWORDS.has(t));
+  if (userTokens.length === 0) {
+    refs.boaWrittenFeedback.textContent = "Typ eerst een inhoudelijk antwoord.";
+    return;
+  }
+
+  const modelKeywords = extractModelKeywords(q);
+  const matched = [];
+  const missing = [];
+
+  modelKeywords.forEach((kw) => {
+    const hasMatch = userTokens.some((ut) => tokenCloseMatch(kw, ut));
+    if (hasMatch) {
+      matched.push(kw);
+    } else {
+      missing.push(kw);
+    }
+  });
+
+  const extra = userTokens.filter((ut) => !modelKeywords.some((kw) => tokenCloseMatch(kw, ut)));
+  const coverage = modelKeywords.length === 0 ? 1 : matched.length / modelKeywords.length;
+  const pct = Math.round(coverage * 100);
+  const verdict =
+    coverage >= 0.75
+      ? "Sterk antwoord, je zit goed."
+      : coverage >= 0.45
+        ? "Je zit in de buurt van het juiste antwoord."
+        : "Je antwoord is nog te ver van het modelantwoord.";
+
+  const goodLine = matched.length ? `Goed herkend: ${matched.slice(0, 8).join(", ")}.` : "Nog weinig kernpunten herkend.";
+  const missLine = missing.length ? `Mist nog: ${missing.slice(0, 8).join(", ")}.` : "Alle kernpunten uit het modelantwoord zijn geraakt.";
+  const extraLine = extra.length ? `Mogelijk afwijken: ${extra.slice(0, 6).join(", ")}.` : "";
+
+  refs.boaWrittenFeedback.textContent =
+    `${verdict} Beoordeling: ${pct}% kernpunten. ${goodLine} ${missLine}${extraLine ? ` ${extraLine}` : ""} Aanvulling: ${q.modelAnswer}`;
 }
 
 function nextBoaWritten() {
@@ -313,7 +404,6 @@ async function loadBoaData() {
   state.boa.written.index = 0;
   state.boa.written.order = shuffle(state.boa.data.written.map((_, i) => i));
 
-  renderBoaQuestionList();
   renderBoa();
 }
 
@@ -566,9 +656,16 @@ refs.boaModeMc.addEventListener("click", () => switchBoaMode("mc"));
 refs.boaModeWritten.addEventListener("click", () => switchBoaMode("written"));
 refs.boaNext.addEventListener("click", nextBoaMc);
 refs.boaReset.addEventListener("click", resetBoaMc);
+refs.boaCheckWritten.addEventListener("click", checkBoaWrittenAnswer);
 refs.boaShowModel.addEventListener("click", showBoaModelAnswer);
 refs.boaWrittenNext.addEventListener("click", nextBoaWritten);
 refs.boaWrittenReset.addEventListener("click", resetBoaWritten);
+refs.boaWrittenAnswer.addEventListener("keydown", (event) => {
+  if (event.key === "Enter" && !event.shiftKey) {
+    event.preventDefault();
+    checkBoaWrittenAnswer();
+  }
+});
 
 refs.categorySelect.addEventListener("change", applyFilters);
 refs.searchInput.addEventListener("input", applyFilters);

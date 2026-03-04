@@ -1,11 +1,11 @@
-{
+﻿{
   "mc": [
     {
       "question": "Welke voorwaarde geldt bij bevoegd optreden als BOA?",
       "options": [
         "Er moet een wettelijke grondslag zijn",
         "Alleen toestemming van de burger is genoeg",
-        "Je mag handelen op basis van intuïtie",
+        "Je mag handelen op basis van intuÃ¯tie",
         "Een mondelinge instructie is altijd voldoende"
       ],
       "correctIndex": 0,
@@ -154,12 +154,12 @@
       "question": "Wat wordt in de context van binnentreden verstaan onder een 'woning'?",
       "options": [
         "Alleen een stenen huis met een officieel adres.",
-        "Elke plaats waar een persoon zijn/haar priv?leven leidt, zoals ook een woonwagen of tent.",
+        "Elke plaats waar een persoon zijn/haar priveleven leidt, zoals ook een woonwagen of tent.",
         "Een plaats waar iemand staat ingeschreven bij de gemeente.",
         "Alleen de binnenruimte van een pand, exclusief de garage."
       ],
       "correctIndex": 1,
-      "explanation": "Volgens jurisprudentie vallen ook alternatieve verblijfplaatsen zoals caravans of campers onder het begrip 'woning' als men daar priv? leeft."
+      "explanation": "Volgens jurisprudentie vallen ook alternatieve verblijfplaatsen zoals caravans of campers onder het begrip 'woning' als men daar prive leeft."
     },
     {
       "question": "Hoelang is een akte van opsporing voor een BOA in de basis geldig?",
@@ -360,7 +360,7 @@
       "explanation": "De be?diging is een vereiste om de opsporingsbevoegdheid daadwerkelijk te mogen uitoefenen."
     },
     {
-      "question": "Mag een BOA gegevens uit de Wpg gebruiken voor priv?doeleinden?",
+      "question": "Mag een BOA gegevens uit de Wpg gebruiken voor privedoeleinden?",
       "options": [
         "Ja, mits hij het aan niemand vertelt.",
         "Nee, dit is een schending van de geheimhoudingsplicht en kan strafbaar zijn.",
@@ -520,7 +520,7 @@
     },
     {
       "question": "Leg uit waarom een woonwagen of tent onder omstandigheden als woning kan gelden.",
-      "modelAnswer": "Een woning is elke plaats waar iemand zijn priv?leven leidt. Daarom kunnen ook woonwagens, campers of tenten als woning gelden bij binnentreden."
+      "modelAnswer": "Een woning is elke plaats waar iemand zijn priveleven leidt. Daarom kunnen ook woonwagens, campers of tenten als woning gelden bij binnentreden."
     },
     {
       "question": "Wat is de rol van de officier van justitie binnen het opsporingsonderzoek?",
@@ -551,8 +551,8 @@
       "modelAnswer": "Een BOA is verplicht tot geheimhouding van gegevens die uit hoofde van het ambt bekend zijn, tenzij een wettelijk voorschrift mededeling verplicht."
     },
     {
-      "question": "Leg uit waarom Wpg-gegevens niet voor priv?doeleinden gebruikt mogen worden.",
-      "modelAnswer": "Wpg-gegevens zijn doelgebonden voor opsporing/politietaak. Priv?gebruik schendt de geheimhoudingsplicht en kan strafbaar zijn."
+      "question": "Leg uit waarom Wpg-gegevens niet voor privedoeleinden gebruikt mogen worden.",
+      "modelAnswer": "Wpg-gegevens zijn doelgebonden voor opsporing/politietaak. privegebruik schendt de geheimhoudingsplicht en kan strafbaar zijn."
     },
     {
       "question": "Noem de kernvereisten waaraan een rechtsgeldig proces-verbaal moet voldoen.",
