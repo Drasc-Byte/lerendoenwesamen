@@ -59,13 +59,13 @@ const state = {
     basic: {
       mode: "mc",
       data: { mc: [], written: [] },
-      mc: { index: 0, score: 0, answered: false },
+      mc: { index: 0, score: 0, answered: false, shuffled: [] },
       written: { index: 0 }
     },
     ov: {
       mode: "mc",
       data: { mc: [], written: [] },
-      mc: { index: 0, score: 0, answered: false },
+      mc: { index: 0, score: 0, answered: false, shuffled: [] },
       written: { index: 0 }
     }
   }
@@ -224,13 +224,19 @@ function renderBoaMc(module) {
     r.mcFeedback.textContent = "Kies het beste antwoord.";
   }
 
-  q.options.forEach((opt, idx) => {
+  if (!Array.isArray(m.mc.shuffled) || m.mc.shuffled.length !== q.options.length) {
+    m.mc.shuffled = q.options.map((_, idx) => idx);
+    m.mc.shuffled = shuffle(m.mc.shuffled);
+  }
+
+  m.mc.shuffled.forEach((originalIdx, shownIdx) => {
+    const opt = q.options[originalIdx];
     const btn = document.createElement("button");
     btn.type = "button";
     btn.className = "quiz-option";
     btn.textContent = opt;
     btn.disabled = m.mc.answered;
-    btn.addEventListener("click", () => answerBoaMc(module, idx));
+    btn.addEventListener("click", () => answerBoaMc(module, shownIdx));
     r.mcOptions.append(btn);
   });
 }
@@ -246,12 +252,13 @@ function answerBoaMc(module, selected) {
   const buttons = [...r.mcOptions.querySelectorAll("button.quiz-option")];
   buttons.forEach((b) => (b.disabled = true));
 
-  const correctBtn = buttons[q.correctIndex];
+  const shownCorrectIndex = m.mc.shuffled.indexOf(q.correctIndex);
+  const correctBtn = buttons[shownCorrectIndex];
   if (correctBtn) {
     correctBtn.classList.add("correct");
   }
 
-  if (selected === q.correctIndex) {
+  if (selected === shownCorrectIndex) {
     m.mc.score += 1;
     r.mcFeedback.textContent = "Goed antwoord.";
   } else {
@@ -272,6 +279,7 @@ function nextBoaMc(module) {
   if (m.mc.index < m.data.mc.length - 1) {
     m.mc.index += 1;
     m.mc.answered = false;
+    m.mc.shuffled = [];
     renderBoa(module);
     return;
   }
@@ -284,6 +292,7 @@ function resetBoaMc(module) {
   m.mc.index = 0;
   m.mc.score = 0;
   m.mc.answered = false;
+  m.mc.shuffled = [];
   renderBoa(module);
 }
 
@@ -357,6 +366,7 @@ async function loadBoaModule(module, url) {
   state.boa[module].mc.index = 0;
   state.boa[module].mc.score = 0;
   state.boa[module].mc.answered = false;
+  state.boa[module].mc.shuffled = [];
   state.boa[module].written.index = 0;
   renderBoa(module);
 }
