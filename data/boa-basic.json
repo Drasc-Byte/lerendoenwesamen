@@ -1,4 +1,4 @@
-﻿{
+{
   "mc": [
     {
       "question": "Welke voorwaarde geldt bij bevoegd optreden als BOA?",
@@ -50,6 +50,435 @@
         "Alleen schriftelijk vorderen"
       ],
       "correctIndex": 0
+    },
+    {
+      "question": "Wanneer is er volgens de tekst sprake van een 'verdachte'?",
+      "options": [
+        "Zodra de politie iemand staande houdt voor een controle.",
+        "Wanneer er een redelijk vermoeden van schuld aan een strafbaar feit is, gebaseerd op feiten of omstandigheden.",
+        "Zodra een opsporingsambtenaar een proces-verbaal opmaakt.",
+        "Wanneer iemand wegrent bij het zien van de politie."
+      ],
+      "correctIndex": 1,
+      "explanation": "Een redelijk vermoeden mag niet op 'niets' gebaseerd zijn, maar moet volgen uit objectieve concrete aanwijzingen."
+    },
+    {
+      "question": "Wie is er volgens de wet belast met het toezicht op de buitengewoon opsporingsambtenaar (BOA)?",
+      "options": [
+        "De korpschef van de Nationale Politie.",
+        "De direct leidinggevende van de BOA.",
+        "Onze Minister (van Justitie en Veiligheid).",
+        "De burgemeester van de gemeente waar de BOA werkt."
+      ],
+      "correctIndex": 2,
+      "explanation": "De Minister is belast met het toezicht op de bekwaamheid en betrouwbaarheid van de BOA."
+    },
+    {
+      "question": "Wat is een kenmerk van een Algemene Maatregel van Bestuur (AMvB)?",
+      "options": [
+        "Het is een wet in formele zin die door de Eerste Kamer is goedgekeurd.",
+        "Het is een besluit dat alleen voor ??n specifieke provincie geldt.",
+        "Het is een Koninklijk Besluit genomen door de regering, waarin regels uit de wet nader worden uitgewerkt.",
+        "Het is een interne instructie van de korpschef."
+      ],
+      "correctIndex": 2,
+      "explanation": "Een voordeel van een AMvB is dat deze makkelijker te wijzigen is dan een wet in formele zin."
+    },
+    {
+      "question": "Wat wordt verstaan onder de 'absolute competentie' van een rechter?",
+      "options": [
+        "De vraag of de rechter geografisch gezien bevoegd is (bijv. regio Amsterdam of Groningen).",
+        "De vraag of de rechter het juiste type rechter is om de zaak te behandelen.",
+        "De mate waarin een rechter ervaring heeft met soortgelijke zaken.",
+        "De bevoegdheid van de rechter om een maximale straf op te leggen."
+      ],
+      "correctIndex": 1,
+      "explanation": "Bij absolute toetsing onderzoekt de rechter of hij/zij de juiste rechter is voor de specifieke zaak."
+    },
+    {
+      "question": "Welke van de volgende zaken is GEEN wettig bewijsmiddel volgens Artikel 339 Sv?",
+      "options": [
+        "Eigen waarneming van de rechter.",
+        "Verklaringen van een getuige.",
+        "Schriftelijke bescheiden (zoals een proces-verbaal).",
+        "Een anonieme tip via 'Meld Misdaad Anoniem'."
+      ],
+      "correctIndex": 3,
+      "explanation": "De vijf wettige bewijsmiddelen zijn: eigen waarneming rechter, verklaringen verdachte, verklaringen getuige, verklaringen deskundige en schriftelijke bescheiden."
+    },
+    {
+      "question": "Wat is de rol van de Hoge Raad in de Nederlandse rechtspraak?",
+      "options": [
+        "Het opnieuw beoordelen van de feiten in een strafzaak.",
+        "Het bewaken van de rechtseenheid en rechtsontwikkeling (cassatie).",
+        "Het horen van getuigen die de rechtbank is vergeten.",
+        "Het bepalen van de hoogte van de boetes voor verkeersovertredingen."
+      ],
+      "correctIndex": 1,
+      "explanation": "De Hoge Raad stelt de feiten niet opnieuw vast, maar kijkt of het recht en de procesregels juist zijn toegepast."
+    },
+    {
+      "question": "Wat moet een BOA tijdens de uitoefening van zijn taak altijd bij zich dragen?",
+      "options": [
+        "Een kopie van de akte van be?diging.",
+        "Een geldig legitimatiebewijs, waarvan het model door de Minister is vastgesteld.",
+        "Een schriftelijke opdracht van de Officier van Justitie.",
+        "Een proces-verbaal blok."
+      ],
+      "correctIndex": 1,
+      "explanation": "Op grond van Artikel 26 van het Besluit BOA moet de ambtenaar dit bewijs desgevraagd aanstonds tonen."
+    },
+    {
+      "question": "Wat is de maximale duur van het 'ophouden voor onderzoek' als er geen voorlopige hechtenis is toegelaten?",
+      "options": [
+        "3 uur",
+        "6 uur",
+        "9 uur",
+        "12 uur"
+      ],
+      "correctIndex": 1,
+      "explanation": "Op grond van Artikel 56a lid 2 Sv mag een verdachte voor wie geen voorlopige hechtenis is toegelaten maximaal zes uur worden opgehouden. De tijd tussen middernacht en 09:00 uur telt hierbij niet mee."
+    },
+    {
+      "question": "Wanneer is er sprake van een strafbare poging volgens Artikel 45 Sr?",
+      "options": [
+        "Zodra twee personen een plan bespreken om een misdrijf te plegen.",
+        "Wanneer het voornemen van de dader zich door een begin van uitvoering heeft geopenbaard.",
+        "Alleen als het misdrijf volledig is voltooid.",
+        "Zodra iemand de benodigde spullen voor een overval koopt."
+      ],
+      "correctIndex": 1,
+      "explanation": "Voor een strafbare poging moet er een voornemen zijn, een begin van uitvoering, en mag er geen sprake zijn van vrijwillige terugtred."
+    },
+    {
+      "question": "Wat wordt in de context van binnentreden verstaan onder een 'woning'?",
+      "options": [
+        "Alleen een stenen huis met een officieel adres.",
+        "Elke plaats waar een persoon zijn/haar priv?leven leidt, zoals ook een woonwagen of tent.",
+        "Een plaats waar iemand staat ingeschreven bij de gemeente.",
+        "Alleen de binnenruimte van een pand, exclusief de garage."
+      ],
+      "correctIndex": 1,
+      "explanation": "Volgens jurisprudentie vallen ook alternatieve verblijfplaatsen zoals caravans of campers onder het begrip 'woning' als men daar priv? leeft."
+    },
+    {
+      "question": "Hoelang is een akte van opsporing voor een BOA in de basis geldig?",
+      "options": [
+        "1 jaar",
+        "3 jaar",
+        "5 jaar",
+        "Onbeperkt, zolang men in dienst blijft"
+      ],
+      "correctIndex": 2,
+      "explanation": "De akte van opsporing is geldig voor een periode van vijf jaar, waarna deze komt te vervallen tenzij deze wordt verlengd."
+    },
+    {
+      "question": "Welke actie moet een BOA ondernemen direct nadat een voorwerp in beslag is genomen?",
+      "options": [
+        "Het voorwerp direct vernietigen.",
+        "Een kennisgeving van inbeslagneming (KVI) uitreiken aan de betrokkene.",
+        "Het voorwerp aan de dichtstbijzijnde burger geven voor bewaring.",
+        "Niets, de melding in het proces-verbaal is voldoende."
+      ],
+      "correctIndex": 1,
+      "explanation": "Artikel 94 lid 3 Sv verplicht de opsporingsambtenaar om zo spoedig mogelijk een bewijs van ontvangst (KVI) uit te reiken."
+    },
+    {
+      "question": "Wat gebeurt er met het recht op strafvervolging als een reiziger zonder geldig vervoerbewijs de gevorderde vervoerprijs alsnog betaalt?",
+      "options": [
+        "Niets, de reiziger wordt nog steeds vervolgd.",
+        "Het recht op strafvervolging vervalt.",
+        "De boete wordt verdubbeld.",
+        "De reiziger krijgt een levenslang reisverbod."
+      ],
+      "correctIndex": 1,
+      "explanation": "Op basis van de Wet personenvervoer 2000 vervalt het recht op strafvervolging zodra de reiziger voldoet aan de vordering van de vervoerder."
+    },
+    {
+      "question": "Onder welke voorwaarde mag een BOA een voertuig doorzoeken op 'heterdaad'?",
+      "options": [
+        "Bij elke willekeurige controle.",
+        "Alleen als de eigenaar schriftelijk toestemming geeft.",
+        "Bij ontdekking op heterdaad of verdenking van een misdrijf waarvoor voorlopige hechtenis is toegelaten.",
+        "Nooit, dit mag alleen de officier van justitie."
+      ],
+      "correctIndex": 2,
+      "explanation": "Artikel 96b Sv geeft de bevoegdheid om vervoermiddelen te doorzoeken, met uitzondering van het woongedeelte zonder toestemming."
+    },
+    {
+      "question": "Wie is de leider van het opsporingsonderzoek?",
+      "options": [
+        "De burgemeester.",
+        "De Officier van Justitie.",
+        "De korpschef.",
+        "De rechter-commissaris."
+      ],
+      "correctIndex": 1,
+      "explanation": "De officier van justitie werkt voor het Openbaar Ministerie en is de leider van het opsporingsonderzoek."
+    },
+    {
+      "question": "Wie wordt er als 'direct toezichthouder' aangewezen als het grondgebied van de BOA binnen ??n regionale eenheid van de politie valt?",
+      "options": [
+        "De korpschef van de nationale politie.",
+        "Het hoofd van de betreffende regionale eenheid van de politie.",
+        "De commandant van de Koninklijke Marechaussee.",
+        "De Minister van Justitie en Veiligheid persoonlijk."
+      ],
+      "correctIndex": 1,
+      "explanation": "Volgens Artikel 36 van het Besluit BOA wordt het hoofd van de regionale eenheid aangewezen als direct toezichthouder wanneer het werkgebied binnen die eenheid valt."
+    },
+    {
+      "question": "Wat wordt er getoetst bij de beoordeling of een beoogd BOA betrouwbaar genoeg is voor de uitoefening van de functie?",
+      "options": [
+        "Alleen of de persoon een diploma heeft behaald.",
+        "Er wordt gekeken naar een Verklaring Omtrent het Gedrag (VOG) en informatie uit politie- en opsporingssystemen.",
+        "Er wordt een fysieke conditietest afgenomen.",
+        "De burgemeester beslist dit op basis van een persoonlijk gesprek."
+      ],
+      "correctIndex": 1,
+      "explanation": "Naast de VOG wordt voor het functieprofiel van de BOA ook gekeken in nationale politie- en opsporingssystemen voor een specifiek screeningsprofiel."
+    },
+    {
+      "question": "Uit hoeveel raadsheren mag de Hoge Raad maximaal bestaan, inclusief de president en vice-presidenten?",
+      "options": [
+        "30 raadsheren",
+        "45 raadsheren",
+        "58 raadsheren",
+        "72 raadsheren"
+      ],
+      "correctIndex": 2,
+      "explanation": "Op basis van Artikel 72 lid 1 van de Wet op de rechterlijke organisatie bestaat de Hoge Raad uit een president, maximaal zeven vice-presidenten en ten hoogste dertig raadsheren en twintig raadsheren in buitengewone dienst, wat neerkomt op maximaal 58."
+    },
+    {
+      "question": "Wat wordt volgens Artikel 338 lid 2 Sv verstaan onder 'feiten of omstandigheden van algemene bekendheid'?",
+      "options": [
+        "Feiten die alleen de rechter en de Officier van Justitie kennen.",
+        "Feiten die in het proces-verbaal staan vermeld.",
+        "Feiten die geen bewijs behoeven.",
+        "Feiten die door minimaal drie getuigen zijn bevestigd."
+      ],
+      "correctIndex": 2,
+      "explanation": "In de wet staat beschreven dat feiten of omstandigheden van algemene bekendheid geen bewijs behoeven."
+    },
+    {
+      "question": "Wanneer wordt de kennisneming van processtukken aan de verdachte in elk geval toegestaan?",
+      "options": [
+        "Zodra de verdachte een advocaat heeft ingeschakeld.",
+        "Vanaf het eerste verhoor na aanhouding.",
+        "Pas op de dag van de terechtzitting.",
+        "Alleen als de Officier van Justitie daar expliciet toestemming voor geeft."
+      ],
+      "correctIndex": 1,
+      "explanation": "Volgens Artikel 30 van het Wetboek van Strafvordering wordt de kennisneming van processtukken in elk geval toegestaan vanaf het eerste verhoor na de aanhouding."
+    },
+    {
+      "question": "Waar moet een BOA het insigne dragen als hij een uniform of bedrijfskleding draagt?",
+      "options": [
+        "Op een willekeurige, naar eigen inzicht gekozen plek.",
+        "Op de achterkant van de jas voor betere zichtbaarheid.",
+        "Op een duidelijk zichtbare plaats op het uniform.",
+        "Het insigne hoeft niet zichtbaar gedragen te worden als men een legitimatiebewijs heeft."
+      ],
+      "correctIndex": 2,
+      "explanation": "Indien de BOA een uniform of bedrijfskleding draagt, wordt dit voorzien van een insigne op een duidelijk zichtbare plaats."
+    },
+    {
+      "question": "Wat is het verschil tussen absolute en relatieve competentie van een rechter?",
+      "options": [
+        "Absolute competentie gaat over de regio; relatieve over het type rechter.",
+        "Absolute competentie bepaalt of het een strafrechter of civiele rechter is; relatieve bepaalt de geografische locatie.",
+        "Absolute competentie geldt voor de Hoge Raad; relatieve voor de rechtbank.",
+        "Er is geen verschil; beide termen betekenen hetzelfde."
+      ],
+      "correctIndex": 1,
+      "explanation": "Bij absolute toetsing onderzoekt de rechter of hij de juiste rechter is voor het soort feit; bij de relatieve competentie wordt getoetst of de rechter geografisch bevoegd is."
+    },
+    {
+      "question": "Welke instantie is verantwoordelijk voor de samenstelling van de processtukken tijdens het opsporingsonderzoek?",
+      "options": [
+        "De rechter-commissaris.",
+        "De verdediging van de verdachte.",
+        "De officier van justitie.",
+        "De direct toezichthouder van de BOA."
+      ],
+      "correctIndex": 2,
+      "explanation": "De officier van justitie is tijdens het opsporingsonderzoek verantwoordelijk voor de samenstelling van de processtukken."
+    },
+    {
+      "question": "Wat is de hoofdregel voor een BOA met betrekking tot gegevens die hem uit hoofde van zijn ambt bekend zijn?",
+      "options": [
+        "Hij mag deze gegevens met iedereen delen om de veiligheid te vergroten.",
+        "Hij is verplicht tot geheimhouding, tenzij een wettelijk voorschrift hem tot mededeling verplicht.",
+        "Hij mag deze gegevens alleen delen met directe familieleden.",
+        "Geheimhouding geldt alleen voor gegevens die als 'staatsgeheim' zijn aangemerkt."
+      ],
+      "correctIndex": 1,
+      "explanation": "Dit is de algemene geheimhoudingsplicht die is vastgelegd in de Ambtenarenwet en specifiek voor opsporingsgegevens in de Wpg."
+    },
+    {
+      "question": "Welke wet regelt de verwerking van gegevens door een BOA bij de uitoefening van de opsporingstaak?",
+      "options": [
+        "De Wet bescherming persoonsgegevens (Wbp).",
+        "De Algemene Verordening Gegevensbescherming (AVG).",
+        "De Wet politiegegevens (Wpg).",
+        "De Wet op de lijkbezorging."
+      ],
+      "correctIndex": 2,
+      "explanation": "De Wpg is de specifieke wet die geldt voor de verwerking van gegevens die noodzakelijk zijn voor de uitvoering van de opsporingstaak."
+    },
+    {
+      "question": "Wanneer moet een BOA een proces-verbaal opmaken volgens de instructies in de tekst?",
+      "options": [
+        "Alleen als de verdachte erom vraagt.",
+        "Zo spoedig mogelijk nadat het strafbare feit is geconstateerd.",
+        "Binnen maximaal 30 dagen na het incident.",
+        "Alleen als er sprake is van een misdrijf, niet bij een overtreding."
+      ],
+      "correctIndex": 1,
+      "explanation": "Een proces-verbaal dient 'onverwijld' of 'zo spoedig mogelijk' te worden opgemaakt om de herinnering aan de feiten zo vers mogelijk te houden."
+    },
+    {
+      "question": "Welk onderdeel mag NOOIT ontbreken in een rechtsgeldig proces-verbaal?",
+      "options": [
+        "De persoonlijke mening van de BOA over de verdachte.",
+        "De ondertekening door de opsporingsambtenaar (of de bevestiging van de eed/belofte).",
+        "Een foto van de verdachte.",
+        "De geboorteplaats van de ouders van de verdachte."
+      ],
+      "correctIndex": 1,
+      "explanation": "Zonder ondertekening en de vermelding dat het 'op ambtseed' of 'belofte' is opgemaakt, mist het document zijn bewijskracht."
+    },
+    {
+      "question": "Wat wordt bedoeld met de 'ambtseed' van een BOA?",
+      "options": [
+        "Een belofte dat de BOA nooit ontslag zal nemen.",
+        "De eed of belofte afgelegd bij de be?diging om de taken eerlijk en getrouw uit te oefenen.",
+        "Een document dat elke maand opnieuw getekend moet worden.",
+        "De eed die een getuige aflegt in de rechtszaal."
+      ],
+      "correctIndex": 1,
+      "explanation": "De be?diging is een vereiste om de opsporingsbevoegdheid daadwerkelijk te mogen uitoefenen."
+    },
+    {
+      "question": "Mag een BOA gegevens uit de Wpg gebruiken voor priv?doeleinden?",
+      "options": [
+        "Ja, mits hij het aan niemand vertelt.",
+        "Nee, dit is een schending van de geheimhoudingsplicht en kan strafbaar zijn.",
+        "Alleen als het gaat om informatie over buren.",
+        "Ja, opsporingsambtenaren hebben onbeperkte toegang voor elk doel."
+      ],
+      "correctIndex": 1,
+      "explanation": "Gegevens mogen alleen worden verwerkt voor het doel waarvoor ze zijn verzameld: de uitvoering van de politietaak of opsporing."
+    },
+    {
+      "question": "Wie staat er aan het hoofd van het Openbaar Ministerie (OM)?",
+      "options": [
+        "De Minister van Justitie en Veiligheid.",
+        "Het College van Procureurs-Generaal.",
+        "De Hoofdofficier van Justitie.",
+        "De President van de Hoge Raad."
+      ],
+      "correctIndex": 1,
+      "explanation": "Het College van Procureurs-Generaal vormt het centrale bestuur van het OM en bepaalt het opsporings- en vervolgingsbeleid."
+    },
+    {
+      "question": "Wat is een specifieke taak van de Rijksrecherche?",
+      "options": [
+        "Het handhaven van de openbare orde tijdens demonstraties.",
+        "Onderzoek doen naar strafbare feiten gepleegd door overheidsfunctionarissen, zoals politieagenten of BOA's.",
+        "Het beveiligen van de koninklijke familie.",
+        "Het uitvoeren van verkeerscontroles op rijkswegen."
+      ],
+      "correctIndex": 1,
+      "explanation": "De Rijksrecherche wordt ingezet bij onderzoeken die de integriteit van de overheid raken om de schijn van partijdigheid te voorkomen."
+    },
+    {
+      "question": "Binnen welke termijn moet een aangehouden verdachte worden voorgeleid aan de hulpofficier van justitie?",
+      "options": [
+        "Onverwijld (zo snel mogelijk).",
+        "Binnen 3 uur.",
+        "Binnen 6 uur.",
+        "Binnen 24 uur."
+      ],
+      "correctIndex": 0,
+      "explanation": "Na aanhouding moet de verdachte direct naar een plaats van verhoor worden gebracht en worden voorgeleid aan een (hulp)officier van justitie."
+    },
+    {
+      "question": "Wat wordt bedoeld met de 'opportuniteitsomschrijving' van het Openbaar Ministerie?",
+      "options": [
+        "De plicht om elk strafbaar feit voor de rechter te brengen.",
+        "De vrijheid om af te zien van vervolging als het algemeen belang daarmee gediend is.",
+        "De bevoegdheid om zelfstandig celstraffen op te leggen.",
+        "De plicht om de identiteit van de verdachte geheim te houden."
+      ],
+      "correctIndex": 1,
+      "explanation": "Op basis van het opportuniteitsbeginsel kan het OM beslissen een zaak te seponeren, bijvoorbeeld bij een gering feit of als de verdachte al genoeg is gestraft."
+    },
+    {
+      "question": "Wat is het doel van de voorgeleiding bij een (hulp)officier van justitie?",
+      "options": [
+        "Om te bepalen of de verdachte direct naar de gevangenis moet.",
+        "Om de rechtmatigheid van de aanhouding te toetsen en te beslissen over het verdere verloop.",
+        "Om de verdachte de gelegenheid te geven zijn advocaat te betalen.",
+        "Om een definitieve straf op te leggen."
+      ],
+      "correctIndex": 1,
+      "explanation": "De (hulp)officier controleert of de aanhouding volgens de regels is gegaan en of de verdachte langer vastgehouden moet worden voor onderzoek."
+    },
+    {
+      "question": "Welke rechter behandelt doorgaans de overtredingen binnen het strafrecht?",
+      "options": [
+        "De politierechter",
+        "De kantonrechter",
+        "De meervoudige kamer",
+        "De kinderrechter"
+      ],
+      "correctIndex": 1,
+      "explanation": "De kantonrechter is bevoegd voor de behandeling van overtredingen. Misdrijven worden doorgaans behandeld door de politierechter (enkelvoudig) of de meervoudige kamer."
+    },
+    {
+      "question": "Wat is het belangrijkste kenmerk van een 'meervoudige kamer' bij de rechtbank?",
+      "options": [
+        "Er wordt naar meerdere strafbare feiten tegelijk gekeken.",
+        "De zaak wordt behandeld door drie rechters.",
+        "Er zijn meerdere verdachten in ??n rechtszaak.",
+        "De zitting vindt plaats in meerdere steden tegelijk."
+      ],
+      "correctIndex": 1,
+      "explanation": "Ingewikkelde zaken of misdrijven waar een zware straf wordt ge?ist, worden behandeld door de meervoudige kamer, bestaande uit drie rechters."
+    },
+    {
+      "question": "Wat gebeurt er tijdens de 'rekwisitoir' van de Officier van Justitie?",
+      "options": [
+        "De Officier van Justitie stelt de identiteit van de verdachte vast.",
+        "De Officier van Justitie houdt een betoog waarin de bewijsmiddelen worden besproken en een straf wordt ge?ist.",
+        "De Officier van Justitie verhoort de getuigen.",
+        "De Officier van Justitie geeft het laatste woord aan de verdachte."
+      ],
+      "correctIndex": 1,
+      "explanation": "In het rekwisitoir zet de officier de feiten op een rij en spreekt de strafeis uit."
+    },
+    {
+      "question": "Wat is de functie van het 'pleidooi' in een strafproces?",
+      "options": [
+        "De rechter legt uit waarom de verdachte schuldig is.",
+        "De advocaat voert de verdediging van de verdachte.",
+        "De getuige vertelt wat hij heeft gezien.",
+        "De Officier van Justitie vraagt om vrijspraak."
+      ],
+      "correctIndex": 1,
+      "explanation": "Tijdens het pleidooi krijgt de advocaat de kans om de kant van de verdachte te belichten en de eis van de officier te weerleggen."
+    },
+    {
+      "question": "Wie heeft in een strafproces altijd het 'laatste woord'?",
+      "options": [
+        "De Officier van Justitie",
+        "De rechter",
+        "De verdachte",
+        "De benadeelde partij (slachtoffer)"
+      ],
+      "correctIndex": 2,
+      "explanation": "De verdachte heeft wettelijk recht op het laatste woord voordat de rechter het onderzoek ter zitting sluit."
     }
   ],
   "written": [
@@ -64,6 +493,90 @@
     {
       "question": "Noem het verschil tussen een feit en een interpretatie in rapportage.",
       "modelAnswer": "Een feit is concreet waarneembaar (bijv. 'persoon liep door rood'). Een interpretatie is een uitleg of vermoeden (bijv. 'persoon had haast')."
+    },
+    {
+      "question": "Leg uit wanneer iemand juridisch als 'verdachte' wordt aangemerkt en noem de ondergrens.",
+      "modelAnswer": "Er is sprake van een verdachte wanneer uit feiten of omstandigheden een redelijk vermoeden van schuld aan een strafbaar feit volgt. Die verdenking mag niet op aannames zonder concrete aanwijzingen rusten."
+    },
+    {
+      "question": "Beschrijf de rol van de Hoge Raad in cassatie en wat de Hoge Raad juist niet doet.",
+      "modelAnswer": "De Hoge Raad bewaakt rechtseenheid en rechtsontwikkeling door te toetsen of het recht en de procesregels juist zijn toegepast. De Hoge Raad stelt in principe geen feiten opnieuw vast."
+    },
+    {
+      "question": "Vat samen wat absolute competentie inhoudt en geef kort een voorbeeld van het belang ervan.",
+      "modelAnswer": "Absolute competentie betekent dat wordt bepaald welk type rechter bevoegd is om de zaak te behandelen. Dit voorkomt dat een zaak door een onjuiste rechterlijke instantie wordt behandeld."
+    },
+    {
+      "question": "Licht toe waarom een AMvB in de praktijk vaak wordt gebruikt naast een wet in formele zin.",
+      "modelAnswer": "Een AMvB werkt wettelijke regels nader uit via een Koninklijk Besluit van de regering en is doorgaans makkelijker aan te passen dan een wet in formele zin."
+    },
+    {
+      "question": "Leg uit wat de maximale duur is van ophouden voor onderzoek zonder voorlopige hechtenis en welke tijd niet meetelt.",
+      "modelAnswer": "De maximale duur is 6 uur. De tijd tussen 00:00 en 09:00 uur telt niet mee in deze termijn."
+    },
+    {
+      "question": "Beschrijf de voorwaarden voor een strafbare poging volgens artikel 45 Sr.",
+      "modelAnswer": "Er moet sprake zijn van voornemen en een begin van uitvoering. Daarnaast mag geen vrijwillige terugtred hebben plaatsgevonden."
+    },
+    {
+      "question": "Leg uit waarom een woonwagen of tent onder omstandigheden als woning kan gelden.",
+      "modelAnswer": "Een woning is elke plaats waar iemand zijn priv?leven leidt. Daarom kunnen ook woonwagens, campers of tenten als woning gelden bij binnentreden."
+    },
+    {
+      "question": "Wat is de rol van de officier van justitie binnen het opsporingsonderzoek?",
+      "modelAnswer": "De officier van justitie is de leider van het opsporingsonderzoek en geeft richting aan de strafrechtelijke afhandeling vanuit het Openbaar Ministerie."
+    },
+    {
+      "question": "Leg uit wanneer het hoofd van een regionale politie-eenheid als direct toezichthouder fungeert voor een BOA.",
+      "modelAnswer": "Wanneer het BOA-werkgebied binnen ??n regionale politie-eenheid valt, wordt het hoofd van die regionale eenheid als direct toezichthouder aangewezen."
+    },
+    {
+      "question": "Beschrijf welke betrouwbaarheidstoetsen worden gebruikt bij de beoordeling van een beoogd BOA.",
+      "modelAnswer": "Er wordt onder meer gekeken naar een VOG en relevante informatie uit politie- en opsporingssystemen volgens het geldende screeningsprofiel."
+    },
+    {
+      "question": "Leg het verschil uit tussen absolute en relatieve competentie van de rechter.",
+      "modelAnswer": "Absolute competentie gaat over het type rechter dat een zaak behandelt; relatieve competentie gaat over de geografische bevoegdheid (welke rechtbank/regio)."
+    },
+    {
+      "question": "Beschrijf vanaf welk moment een verdachte in elk geval recht heeft op kennisneming van processtukken.",
+      "modelAnswer": "In elk geval vanaf het eerste verhoor na aanhouding heeft de verdachte recht op kennisneming van processtukken."
+    },
+    {
+      "question": "Licht toe welke rol de officier van justitie heeft bij de samenstelling van processtukken in het opsporingsonderzoek.",
+      "modelAnswer": "De officier van justitie is verantwoordelijk voor de samenstelling van de processtukken tijdens het opsporingsonderzoek en stuurt de strafrechtelijke afdoening vanuit het OM aan."
+    },
+    {
+      "question": "Beschrijf de hoofdregel van geheimhouding voor een BOA en noem de uitzondering.",
+      "modelAnswer": "Een BOA is verplicht tot geheimhouding van gegevens die uit hoofde van het ambt bekend zijn, tenzij een wettelijk voorschrift mededeling verplicht."
+    },
+    {
+      "question": "Leg uit waarom Wpg-gegevens niet voor priv?doeleinden gebruikt mogen worden.",
+      "modelAnswer": "Wpg-gegevens zijn doelgebonden voor opsporing/politietaak. Priv?gebruik schendt de geheimhoudingsplicht en kan strafbaar zijn."
+    },
+    {
+      "question": "Noem de kernvereisten waaraan een rechtsgeldig proces-verbaal moet voldoen.",
+      "modelAnswer": "Het proces-verbaal moet tijdig en feitelijk zijn opgesteld, voorzien zijn van ondertekening en vermelden dat het op ambtseed of ambtsbelofte is opgemaakt."
+    },
+    {
+      "question": "Beschrijf de rol van het College van Procureurs-Generaal binnen het Openbaar Ministerie.",
+      "modelAnswer": "Het College van Procureurs-Generaal vormt de landelijke leiding van het OM en bepaalt het opsporings- en vervolgingsbeleid."
+    },
+    {
+      "question": "Leg uit wat het opportuniteitsbeginsel inhoudt en noem een voorbeeld van toepassing.",
+      "modelAnswer": "Het opportuniteitsbeginsel betekent dat het OM kan besluiten af te zien van vervolging als het algemeen belang dat rechtvaardigt, bijvoorbeeld bij een gering feit of wanneer vervolging niet doelmatig is."
+    },
+    {
+      "question": "Wat is het doel van de voorgeleiding bij de (hulp)officier van justitie na aanhouding?",
+      "modelAnswer": "De voorgeleiding dient om de rechtmatigheid van de aanhouding te toetsen en te beslissen over het verdere traject, zoals ophouden voor onderzoek."
+    },
+    {
+      "question": "Leg het verschil uit tussen de kantonrechter, politierechter en meervoudige kamer in strafzaken.",
+      "modelAnswer": "De kantonrechter behandelt overtredingen. De politierechter behandelt veelvoorkomende misdrijven enkelvoudig. De meervoudige kamer behandelt zwaardere of complexere zaken met drie rechters."
+    },
+    {
+      "question": "Beschrijf de volgorde en functie van rekwisitoir, pleidooi en het laatste woord in een strafzitting.",
+      "modelAnswer": "In het rekwisitoir bespreekt de officier bewijs en strafeis, daarna voert de verdediging pleidooi, en vervolgens krijgt de verdachte het wettelijk laatste woord."
     }
   ]
 }
