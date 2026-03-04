@@ -17,8 +17,7 @@
 
     <section class="track-switch">
       <button id="track-traffic" class="active">Verkeersborden</button>
-      <button id="track-boa-basic">BOA Basisbekwaamheid</button>
-      <button id="track-boa-ov">BOA Openbaar Vervoer</button>
+      <button id="track-boa">BOA Examentraining (Basis + OV)</button>
     </section>
 
     <section id="traffic-view" class="track-view active">
@@ -85,65 +84,39 @@
       </section>
     </section>
 
-    <section id="boa-basic-view" class="track-view card">
-      <h2>BOA Basisbekwaamheid</h2>
-      <p id="boa-basic-meta" class="meta"></p>
+    <section id="boa-view" class="track-view card">
+      <h2>BOA Examentraining</h2>
+      <p id="boa-meta" class="meta"></p>
 
       <section class="boa-mode-switch">
-        <button id="boa-basic-mode-mc" class="active">Meerkeuze</button>
-        <button id="boa-basic-mode-written">Schriftelijk</button>
+        <button id="boa-mode-mc" class="active">Meerkeuze</button>
+        <button id="boa-mode-written">Schriftelijk</button>
       </section>
 
-      <section id="boa-basic-mc-view" class="quiz-card boa-mode-view active">
-        <p id="boa-basic-question" class="quiz-question"></p>
-        <div id="boa-basic-options" class="quiz-options"></div>
-        <p id="boa-basic-feedback" class="meta"></p>
+      <section id="boa-mc-view" class="quiz-card boa-mode-view active">
+        <p id="boa-question" class="quiz-question"></p>
+        <div id="boa-options" class="quiz-options"></div>
+        <p id="boa-feedback" class="meta"></p>
         <div class="quiz-actions">
-          <button id="boa-basic-next">Volgende vraag</button>
-          <button id="boa-basic-reset">Opnieuw starten</button>
+          <button id="boa-next">Volgende vraag</button>
+          <button id="boa-reset">Opnieuw starten</button>
         </div>
       </section>
 
-      <section id="boa-basic-written-view" class="quiz-card boa-mode-view">
-        <p id="boa-basic-written-question" class="quiz-question"></p>
-        <textarea id="boa-basic-written-answer" class="written-input" rows="5" placeholder="Typ hier je antwoord..."></textarea>
-        <p id="boa-basic-written-feedback" class="meta"></p>
+      <section id="boa-written-view" class="quiz-card boa-mode-view">
+        <p id="boa-written-question" class="quiz-question"></p>
+        <textarea id="boa-written-answer" class="written-input" rows="5" placeholder="Typ hier je antwoord..."></textarea>
+        <p id="boa-written-feedback" class="meta"></p>
         <div class="quiz-actions">
-          <button id="boa-basic-show-model">Toon voorbeeldantwoord</button>
-          <button id="boa-basic-written-next">Volgende vraag</button>
-          <button id="boa-basic-written-reset">Opnieuw starten</button>
-        </div>
-      </section>
-    </section>
-
-    <section id="boa-ov-view" class="track-view card">
-      <h2>BOA Openbaar Vervoer</h2>
-      <p id="boa-ov-meta" class="meta"></p>
-
-      <section class="boa-mode-switch">
-        <button id="boa-ov-mode-mc" class="active">Meerkeuze</button>
-        <button id="boa-ov-mode-written">Schriftelijk</button>
-      </section>
-
-      <section id="boa-ov-mc-view" class="quiz-card boa-mode-view active">
-        <p id="boa-ov-question" class="quiz-question"></p>
-        <div id="boa-ov-options" class="quiz-options"></div>
-        <p id="boa-ov-feedback" class="meta"></p>
-        <div class="quiz-actions">
-          <button id="boa-ov-next">Volgende vraag</button>
-          <button id="boa-ov-reset">Opnieuw starten</button>
+          <button id="boa-show-model">Toon voorbeeldantwoord</button>
+          <button id="boa-written-next">Volgende vraag</button>
+          <button id="boa-written-reset">Opnieuw starten</button>
         </div>
       </section>
 
-      <section id="boa-ov-written-view" class="quiz-card boa-mode-view">
-        <p id="boa-ov-written-question" class="quiz-question"></p>
-        <textarea id="boa-ov-written-answer" class="written-input" rows="5" placeholder="Typ hier je antwoord..."></textarea>
-        <p id="boa-ov-written-feedback" class="meta"></p>
-        <div class="quiz-actions">
-          <button id="boa-ov-show-model">Toon voorbeeldantwoord</button>
-          <button id="boa-ov-written-next">Volgende vraag</button>
-          <button id="boa-ov-written-reset">Opnieuw starten</button>
-        </div>
+      <section class="card">
+        <h3>Vragenoverzicht (Meerkeuze)</h3>
+        <ol id="boa-question-list" class="question-list"></ol>
       </section>
     </section>
 

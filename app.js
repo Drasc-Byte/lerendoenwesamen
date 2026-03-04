@@ -1,48 +1,26 @@
 ﻿let signs = [];
 
 const defaultBoaData = {
-  basic: {
-    mc: [
-      {
-        question: "Wanneer mag een BOA een bevoegdheid inzetten?",
-        options: [
-          "Alleen met wettelijke grondslag, proportionaliteit en subsidiariteit",
-          "Altijd wanneer iemand niet meewerkt",
-          "Alleen na goedkeuring van een collega",
-          "Nooit zonder proces-verbaal"
-        ],
-        correctIndex: 0,
-        explanation: "Bevoegd gebruik vereist wettelijke basis en een zorgvuldige afweging."
-      }
-    ],
-    written: [
-      {
-        question: "Noem in eigen woorden het verschil tussen proportionaliteit en subsidiariteit.",
-        modelAnswer: "Proportionaliteit betekent dat het middel in verhouding staat tot het doel. Subsidiariteit betekent dat je kiest voor het minst ingrijpende middel dat effectief is."
-      }
-    ]
-  },
-  ov: {
-    mc: [
-      {
-        question: "Wat is bij een incident in het OV de eerste prioriteit?",
-        options: [
-          "Veiligheid van reizigers en personeel borgen",
-          "Direct uitschrijven van boetes",
-          "Alleen filmen voor bewijs",
-          "Wachten tot het incident vanzelf stopt"
-        ],
-        correctIndex: 0,
-        explanation: "Veiligheid gaat altijd voor handhaving en afhandeling."
-      }
-    ],
-    written: [
-      {
-        question: "Beschrijf hoe je een conflict op een perron de-escalerend benadert.",
-        modelAnswer: "Blijf rustig, positioneer veilig, spreek duidelijk aan, scheid partijen indien nodig, roep ondersteuning in en leg feiten achteraf objectief vast."
-      }
-    ]
-  }
+  mc: [
+    {
+      question: "Wanneer mag een BOA een bevoegdheid inzetten?",
+      options: [
+        "Alleen met wettelijke grondslag, proportionaliteit en subsidiariteit",
+        "Altijd wanneer iemand niet meewerkt",
+        "Alleen na goedkeuring van een collega",
+        "Nooit zonder proces-verbaal"
+      ],
+      correctIndex: 0,
+      explanation: "Bevoegd gebruik vereist wettelijke basis en een zorgvuldige afweging."
+    }
+  ],
+  written: [
+    {
+      question: "Noem in eigen woorden het verschil tussen proportionaliteit en subsidiariteit.",
+      modelAnswer:
+        "Proportionaliteit betekent dat het middel in verhouding staat tot het doel. Subsidiariteit betekent dat je kiest voor het minst ingrijpende middel dat effectief is."
+    }
+  ]
 };
 
 const state = {
@@ -56,28 +34,18 @@ const state = {
   matchesFound: 0,
   score: 0,
   boa: {
-    basic: {
-      mode: "mc",
-      data: { mc: [], written: [] },
-      mc: { index: 0, score: 0, answered: false, shuffled: [] },
-      written: { index: 0 }
-    },
-    ov: {
-      mode: "mc",
-      data: { mc: [], written: [] },
-      mc: { index: 0, score: 0, answered: false, shuffled: [] },
-      written: { index: 0 }
-    }
+    mode: "mc",
+    data: { mc: [], written: [] },
+    mc: { index: 0, score: 0, answered: false, shuffled: [], order: [] },
+    written: { index: 0, order: [] }
   }
 };
 
 const refs = {
   trackTraffic: document.getElementById("track-traffic"),
-  trackBoaBasic: document.getElementById("track-boa-basic"),
-  trackBoaOv: document.getElementById("track-boa-ov"),
+  trackBoa: document.getElementById("track-boa"),
   trafficView: document.getElementById("traffic-view"),
-  boaBasicView: document.getElementById("boa-basic-view"),
-  boaOvView: document.getElementById("boa-ov-view"),
+  boaView: document.getElementById("boa-view"),
 
   categorySelect: document.getElementById("category-select"),
   searchInput: document.getElementById("search-input"),
@@ -101,70 +69,24 @@ const refs = {
   matchingScore: document.getElementById("matching-score"),
   newRound: document.getElementById("new-round"),
 
-  boaBasicMeta: document.getElementById("boa-basic-meta"),
-  boaBasicModeMc: document.getElementById("boa-basic-mode-mc"),
-  boaBasicModeWritten: document.getElementById("boa-basic-mode-written"),
-  boaBasicMcView: document.getElementById("boa-basic-mc-view"),
-  boaBasicWrittenView: document.getElementById("boa-basic-written-view"),
-  boaBasicQuestion: document.getElementById("boa-basic-question"),
-  boaBasicOptions: document.getElementById("boa-basic-options"),
-  boaBasicFeedback: document.getElementById("boa-basic-feedback"),
-  boaBasicNext: document.getElementById("boa-basic-next"),
-  boaBasicReset: document.getElementById("boa-basic-reset"),
-  boaBasicWrittenQuestion: document.getElementById("boa-basic-written-question"),
-  boaBasicWrittenAnswer: document.getElementById("boa-basic-written-answer"),
-  boaBasicWrittenFeedback: document.getElementById("boa-basic-written-feedback"),
-  boaBasicShowModel: document.getElementById("boa-basic-show-model"),
-  boaBasicWrittenNext: document.getElementById("boa-basic-written-next"),
-  boaBasicWrittenReset: document.getElementById("boa-basic-written-reset"),
-
-  boaOvMeta: document.getElementById("boa-ov-meta"),
-  boaOvModeMc: document.getElementById("boa-ov-mode-mc"),
-  boaOvModeWritten: document.getElementById("boa-ov-mode-written"),
-  boaOvMcView: document.getElementById("boa-ov-mc-view"),
-  boaOvWrittenView: document.getElementById("boa-ov-written-view"),
-  boaOvQuestion: document.getElementById("boa-ov-question"),
-  boaOvOptions: document.getElementById("boa-ov-options"),
-  boaOvFeedback: document.getElementById("boa-ov-feedback"),
-  boaOvNext: document.getElementById("boa-ov-next"),
-  boaOvReset: document.getElementById("boa-ov-reset"),
-  boaOvWrittenQuestion: document.getElementById("boa-ov-written-question"),
-  boaOvWrittenAnswer: document.getElementById("boa-ov-written-answer"),
-  boaOvWrittenFeedback: document.getElementById("boa-ov-written-feedback"),
-  boaOvShowModel: document.getElementById("boa-ov-show-model"),
-  boaOvWrittenNext: document.getElementById("boa-ov-written-next"),
-  boaOvWrittenReset: document.getElementById("boa-ov-written-reset")
+  boaMeta: document.getElementById("boa-meta"),
+  boaModeMc: document.getElementById("boa-mode-mc"),
+  boaModeWritten: document.getElementById("boa-mode-written"),
+  boaMcView: document.getElementById("boa-mc-view"),
+  boaWrittenView: document.getElementById("boa-written-view"),
+  boaQuestion: document.getElementById("boa-question"),
+  boaOptions: document.getElementById("boa-options"),
+  boaFeedback: document.getElementById("boa-feedback"),
+  boaNext: document.getElementById("boa-next"),
+  boaReset: document.getElementById("boa-reset"),
+  boaWrittenQuestion: document.getElementById("boa-written-question"),
+  boaWrittenAnswer: document.getElementById("boa-written-answer"),
+  boaWrittenFeedback: document.getElementById("boa-written-feedback"),
+  boaShowModel: document.getElementById("boa-show-model"),
+  boaWrittenNext: document.getElementById("boa-written-next"),
+  boaWrittenReset: document.getElementById("boa-written-reset"),
+  boaQuestionList: document.getElementById("boa-question-list")
 };
-
-function getBoaRefs(module) {
-  return module === "basic"
-    ? {
-        meta: refs.boaBasicMeta,
-        modeMcBtn: refs.boaBasicModeMc,
-        modeWrittenBtn: refs.boaBasicModeWritten,
-        mcView: refs.boaBasicMcView,
-        writtenView: refs.boaBasicWrittenView,
-        mcQuestion: refs.boaBasicQuestion,
-        mcOptions: refs.boaBasicOptions,
-        mcFeedback: refs.boaBasicFeedback,
-        writtenQuestion: refs.boaBasicWrittenQuestion,
-        writtenAnswer: refs.boaBasicWrittenAnswer,
-        writtenFeedback: refs.boaBasicWrittenFeedback
-      }
-    : {
-        meta: refs.boaOvMeta,
-        modeMcBtn: refs.boaOvModeMc,
-        modeWrittenBtn: refs.boaOvModeWritten,
-        mcView: refs.boaOvMcView,
-        writtenView: refs.boaOvWrittenView,
-        mcQuestion: refs.boaOvQuestion,
-        mcOptions: refs.boaOvOptions,
-        mcFeedback: refs.boaOvFeedback,
-        writtenQuestion: refs.boaOvWrittenQuestion,
-        writtenAnswer: refs.boaOvWrittenAnswer,
-        writtenFeedback: refs.boaOvWrittenFeedback
-      };
-}
 
 function setDataStatus(message) {
   if (refs.dataStatus) {
@@ -175,206 +97,224 @@ function setDataStatus(message) {
 function switchTrack(track) {
   state.track = track;
   const isTraffic = track === "traffic";
-  const isBoaBasic = track === "boa-basic";
-  const isBoaOv = track === "boa-ov";
 
   refs.trackTraffic.classList.toggle("active", isTraffic);
-  refs.trackBoaBasic.classList.toggle("active", isBoaBasic);
-  refs.trackBoaOv.classList.toggle("active", isBoaOv);
+  refs.trackBoa.classList.toggle("active", !isTraffic);
 
   refs.trafficView.classList.toggle("active", isTraffic);
-  refs.boaBasicView.classList.toggle("active", isBoaBasic);
-  refs.boaOvView.classList.toggle("active", isBoaOv);
+  refs.boaView.classList.toggle("active", !isTraffic);
 }
 
-function switchBoaMode(module, mode) {
-  const m = state.boa[module];
-  m.mode = mode;
-  const r = getBoaRefs(module);
+function switchBoaMode(mode) {
+  state.boa.mode = mode;
   const isMc = mode === "mc";
-  r.modeMcBtn.classList.toggle("active", isMc);
-  r.modeWrittenBtn.classList.toggle("active", !isMc);
-  r.mcView.classList.toggle("active", isMc);
-  r.writtenView.classList.toggle("active", !isMc);
-  renderBoa(module);
+  refs.boaModeMc.classList.toggle("active", isMc);
+  refs.boaModeWritten.classList.toggle("active", !isMc);
+  refs.boaMcView.classList.toggle("active", isMc);
+  refs.boaWrittenView.classList.toggle("active", !isMc);
+  renderBoa();
 }
 
-function setBoaMeta(module) {
-  const m = state.boa[module];
-  const r = getBoaRefs(module);
-  if (m.mode === "mc") {
-    const total = m.data.mc.length;
-    const current = total ? m.mc.index + 1 : 0;
-    r.meta.textContent = `Meerkeuze ${current}/${total} | Score: ${m.mc.score}`;
-  } else {
-    const total = m.data.written.length;
-    const current = total ? m.written.index + 1 : 0;
-    r.meta.textContent = `Schriftelijk ${current}/${total}`;
+function mergeBoaData(...payloads) {
+  const mcMap = new Map();
+  const writtenMap = new Map();
+
+  for (const payload of payloads) {
+    const mc = Array.isArray(payload.mc) ? payload.mc : [];
+    const written = Array.isArray(payload.written) ? payload.written : [];
+
+    mc.forEach((q) => {
+      if (q && q.question && !mcMap.has(q.question)) {
+        mcMap.set(q.question, q);
+      }
+    });
+
+    written.forEach((q) => {
+      if (q && q.question && !writtenMap.has(q.question)) {
+        writtenMap.set(q.question, q);
+      }
+    });
   }
+
+  return { mc: [...mcMap.values()], written: [...writtenMap.values()] };
 }
 
-function renderBoaMc(module) {
-  const m = state.boa[module];
-  const r = getBoaRefs(module);
-  const q = m.data.mc[m.mc.index];
-  if (!q) {
-    r.mcQuestion.textContent = "Geen meerkeuzevragen geladen.";
-    r.mcOptions.innerHTML = "";
-    r.mcFeedback.textContent = "";
-    return;
-  }
-
-  r.mcQuestion.textContent = q.question;
-  r.mcOptions.innerHTML = "";
-  if (!m.mc.answered) {
-    r.mcFeedback.textContent = "Kies het beste antwoord.";
-  }
-
-  if (!Array.isArray(m.mc.shuffled) || m.mc.shuffled.length !== q.options.length) {
-    m.mc.shuffled = q.options.map((_, idx) => idx);
-    m.mc.shuffled = shuffle(m.mc.shuffled);
-  }
-
-  m.mc.shuffled.forEach((originalIdx, shownIdx) => {
-    const opt = q.options[originalIdx];
-    const btn = document.createElement("button");
-    btn.type = "button";
-    btn.className = "quiz-option";
-    btn.textContent = opt;
-    btn.disabled = m.mc.answered;
-    btn.addEventListener("click", () => answerBoaMc(module, shownIdx));
-    r.mcOptions.append(btn);
+function renderBoaQuestionList() {
+  refs.boaQuestionList.innerHTML = "";
+  state.boa.data.mc.forEach((q) => {
+    const li = document.createElement("li");
+    li.textContent = q.question;
+    refs.boaQuestionList.append(li);
   });
 }
 
-function answerBoaMc(module, selected) {
-  const m = state.boa[module];
-  if (m.mc.answered) {
+function setBoaMeta() {
+  const m = state.boa;
+  if (m.mode === "mc") {
+    const total = m.data.mc.length;
+    const current = total ? m.mc.index + 1 : 0;
+    refs.boaMeta.textContent = `Meerkeuze ${current}/${total} | Score: ${m.mc.score} | Schriftelijk: ${m.data.written.length}`;
+  } else {
+    const total = m.data.written.length;
+    const current = total ? m.written.index + 1 : 0;
+    refs.boaMeta.textContent = `Schriftelijk ${current}/${total} | Meerkeuze totaal: ${m.data.mc.length}`;
+  }
+}
+
+function renderBoaMc() {
+  const m = state.boa;
+  const qIdx = m.mc.order[m.mc.index];
+  const q = m.data.mc[qIdx];
+  if (!q) {
+    refs.boaQuestion.textContent = "Geen meerkeuzevragen geladen.";
+    refs.boaOptions.innerHTML = "";
+    refs.boaFeedback.textContent = "";
     return;
   }
 
-  const r = getBoaRefs(module);
-  const q = m.data.mc[m.mc.index];
-  const buttons = [...r.mcOptions.querySelectorAll("button.quiz-option")];
-  buttons.forEach((b) => (b.disabled = true));
+  refs.boaQuestion.textContent = q.question;
+  refs.boaOptions.innerHTML = "";
+  if (!m.mc.answered) refs.boaFeedback.textContent = "Kies het beste antwoord.";
 
-  const shownCorrectIndex = m.mc.shuffled.indexOf(q.correctIndex);
-  const correctBtn = buttons[shownCorrectIndex];
-  if (correctBtn) {
-    correctBtn.classList.add("correct");
+  if (!Array.isArray(m.mc.shuffled) || m.mc.shuffled.length !== q.options.length) {
+    m.mc.shuffled = shuffle(q.options.map((_, i) => i));
   }
 
-  if (selected === shownCorrectIndex) {
+  m.mc.shuffled.forEach((origIdx, shownIdx) => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "quiz-option";
+    btn.textContent = q.options[origIdx];
+    btn.disabled = m.mc.answered;
+    btn.addEventListener("click", () => answerBoaMc(shownIdx));
+    refs.boaOptions.append(btn);
+  });
+}
+
+function answerBoaMc(selectedShownIdx) {
+  const m = state.boa;
+  if (m.mc.answered) return;
+
+  const qIdx = m.mc.order[m.mc.index];
+  const q = m.data.mc[qIdx];
+  const buttons = [...refs.boaOptions.querySelectorAll("button.quiz-option")];
+  buttons.forEach((b) => (b.disabled = true));
+
+  const correctShownIdx = m.mc.shuffled.indexOf(q.correctIndex);
+  const correctBtn = buttons[correctShownIdx];
+  if (correctBtn) correctBtn.classList.add("correct");
+
+  if (selectedShownIdx === correctShownIdx) {
     m.mc.score += 1;
-    r.mcFeedback.textContent = "Goed antwoord.";
+    refs.boaFeedback.textContent = "Goed antwoord.";
   } else {
-    const selectedBtn = buttons[selected];
-    if (selectedBtn) {
-      selectedBtn.classList.add("wrong");
-    }
+    const selectedBtn = buttons[selectedShownIdx];
+    if (selectedBtn) selectedBtn.classList.add("wrong");
     const extra = q.explanation ? ` ${q.explanation}` : "";
-    r.mcFeedback.textContent = `Onjuist. Correct: ${q.options[q.correctIndex]}.${extra}`;
+    refs.boaFeedback.textContent = `Onjuist. Correct: ${q.options[q.correctIndex]}.${extra}`;
   }
 
   m.mc.answered = true;
-  setBoaMeta(module);
+  setBoaMeta();
 }
 
-function nextBoaMc(module) {
-  const m = state.boa[module];
+function nextBoaMc() {
+  const m = state.boa;
   if (m.mc.index < m.data.mc.length - 1) {
     m.mc.index += 1;
     m.mc.answered = false;
     m.mc.shuffled = [];
-    renderBoa(module);
+    renderBoa();
     return;
   }
-  const r = getBoaRefs(module);
-  r.mcFeedback.textContent = `Einde set. Eindscore: ${m.mc.score}/${m.data.mc.length}.`;
+  refs.boaFeedback.textContent = `Einde set. Eindscore: ${m.mc.score}/${m.data.mc.length}.`;
 }
 
-function resetBoaMc(module) {
-  const m = state.boa[module];
+function resetBoaMc() {
+  const m = state.boa;
   m.mc.index = 0;
   m.mc.score = 0;
   m.mc.answered = false;
   m.mc.shuffled = [];
-  renderBoa(module);
+  m.mc.order = shuffle(m.data.mc.map((_, i) => i));
+  renderBoa();
 }
 
-function renderBoaWritten(module) {
-  const m = state.boa[module];
-  const r = getBoaRefs(module);
-  const q = m.data.written[m.written.index];
+function renderBoaWritten() {
+  const m = state.boa;
+  const qIdx = m.written.order[m.written.index];
+  const q = m.data.written[qIdx];
   if (!q) {
-    r.writtenQuestion.textContent = "Geen schriftelijke vragen geladen.";
-    r.writtenFeedback.textContent = "";
+    refs.boaWrittenQuestion.textContent = "Geen schriftelijke vragen geladen.";
+    refs.boaWrittenFeedback.textContent = "";
     return;
   }
 
-  r.writtenQuestion.textContent = q.question;
-  r.writtenFeedback.textContent = "Formuleer je antwoord en controleer met het voorbeeldantwoord.";
+  refs.boaWrittenQuestion.textContent = q.question;
+  refs.boaWrittenFeedback.textContent = "Formuleer je antwoord en controleer met het voorbeeldantwoord.";
 }
 
-function showBoaModelAnswer(module) {
-  const m = state.boa[module];
-  const r = getBoaRefs(module);
-  const q = m.data.written[m.written.index];
-  if (!q) {
-    return;
-  }
-  r.writtenFeedback.textContent = `Voorbeeldantwoord: ${q.modelAnswer}`;
+function showBoaModelAnswer() {
+  const m = state.boa;
+  const qIdx = m.written.order[m.written.index];
+  const q = m.data.written[qIdx];
+  if (!q) return;
+  refs.boaWrittenFeedback.textContent = `Voorbeeldantwoord: ${q.modelAnswer}`;
 }
 
-function nextBoaWritten(module) {
-  const m = state.boa[module];
-  const r = getBoaRefs(module);
+function nextBoaWritten() {
+  const m = state.boa;
   if (m.written.index < m.data.written.length - 1) {
     m.written.index += 1;
-    r.writtenAnswer.value = "";
-    renderBoa(module);
+    refs.boaWrittenAnswer.value = "";
+    renderBoa();
     return;
   }
-  r.writtenFeedback.textContent = "Einde schriftelijke set bereikt.";
+  refs.boaWrittenFeedback.textContent = "Einde schriftelijke set bereikt.";
 }
 
-function resetBoaWritten(module) {
-  const m = state.boa[module];
-  const r = getBoaRefs(module);
+function resetBoaWritten() {
+  const m = state.boa;
   m.written.index = 0;
-  r.writtenAnswer.value = "";
-  renderBoa(module);
+  refs.boaWrittenAnswer.value = "";
+  m.written.order = shuffle(m.data.written.map((_, i) => i));
+  renderBoa();
 }
 
-function renderBoa(module) {
-  const m = state.boa[module];
-  setBoaMeta(module);
-  if (m.mode === "mc") {
-    renderBoaMc(module);
+function renderBoa() {
+  setBoaMeta();
+  if (state.boa.mode === "mc") {
+    renderBoaMc();
   } else {
-    renderBoaWritten(module);
+    renderBoaWritten();
   }
 }
 
-async function loadBoaModule(module, url) {
+async function loadBoaData() {
   try {
-    const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status}`);
-    }
-    const payload = await response.json();
-    state.boa[module].data.mc = Array.isArray(payload.mc) ? payload.mc : [];
-    state.boa[module].data.written = Array.isArray(payload.written) ? payload.written : [];
+    const [basicRes, ovRes] = await Promise.all([
+      fetch("/data/boa-basic.json"),
+      fetch("/data/boa-ov.json")
+    ]);
+
+    const basic = basicRes.ok ? await basicRes.json() : { mc: [], written: [] };
+    const ov = ovRes.ok ? await ovRes.json() : { mc: [], written: [] };
+
+    state.boa.data = mergeBoaData(basic, ov);
   } catch (_error) {
-    state.boa[module].data = JSON.parse(JSON.stringify(defaultBoaData[module]));
+    state.boa.data = JSON.parse(JSON.stringify(defaultBoaData));
   }
 
-  state.boa[module].mc.index = 0;
-  state.boa[module].mc.score = 0;
-  state.boa[module].mc.answered = false;
-  state.boa[module].mc.shuffled = [];
-  state.boa[module].written.index = 0;
-  renderBoa(module);
+  state.boa.mc.index = 0;
+  state.boa.mc.score = 0;
+  state.boa.mc.answered = false;
+  state.boa.mc.shuffled = [];
+  state.boa.mc.order = shuffle(state.boa.data.mc.map((_, i) => i));
+  state.boa.written.index = 0;
+  state.boa.written.order = shuffle(state.boa.data.written.map((_, i) => i));
+
+  renderBoaQuestionList();
+  renderBoa();
 }
 
 function commonsImageForCode(code) {
@@ -455,10 +395,7 @@ function renderFlashcard() {
 }
 
 function nextCard(step) {
-  if (state.filtered.length === 0) {
-    return;
-  }
-
+  if (state.filtered.length === 0) return;
   const total = state.filtered.length;
   state.cardIndex = (state.cardIndex + step + total) % total;
   renderFlashcard();
@@ -507,7 +444,6 @@ function buildMatchButton(pair, side) {
 
     const label = document.createElement("span");
     label.textContent = pair.code;
-
     wrap.append(img, label);
     btn.append(wrap);
   } else {
@@ -519,13 +455,8 @@ function buildMatchButton(pair, side) {
     btn.disabled = true;
   }
 
-  if (side === "left" && state.selectedLeft === pair.id) {
-    btn.classList.add("active");
-  }
-
-  if (side === "right" && state.selectedRight === pair.id) {
-    btn.classList.add("active");
-  }
+  if (side === "left" && state.selectedLeft === pair.id) btn.classList.add("active");
+  if (side === "right" && state.selectedRight === pair.id) btn.classList.add("active");
 
   return btn;
 }
@@ -546,18 +477,13 @@ function renderMatching() {
 function feedbackWrong(id, side) {
   const selector = `.match-item[data-side="${side}"][data-id="${id}"]`;
   const node = document.querySelector(selector);
-  if (!node) {
-    return;
-  }
-
+  if (!node) return;
   node.classList.add("wrong");
   setTimeout(() => node.classList.remove("wrong"), 450);
 }
 
 function tryMatch() {
-  if (!state.selectedLeft || !state.selectedRight) {
-    return;
-  }
+  if (!state.selectedLeft || !state.selectedRight) return;
 
   if (state.selectedLeft === state.selectedRight) {
     const pair = state.matchingPairs.find((item) => item.id === state.selectedLeft);
@@ -598,34 +524,18 @@ function setupMatchingRound() {
 
 async function tryLoadFromApi() {
   const response = await fetch("/api/signs");
-  if (!response.ok) {
-    throw new Error(`HTTP ${response.status}`);
-  }
-
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const payload = await response.json();
-  if (!payload.signs || payload.signs.length === 0) {
-    throw new Error("No signs returned");
-  }
-
+  if (!payload.signs || payload.signs.length === 0) throw new Error("No signs returned");
   signs = enrichSigns(payload.signs);
-
-  const dateText = payload.retrievedAt ? new Date(payload.retrievedAt).toLocaleString("nl-NL") : "onbekend";
-  const sourceText = payload.sourceName || "externe bron";
-  const statusText = payload.sourceStatus ? ` (${payload.sourceStatus})` : "";
   setDataStatus("");
 }
 
 async function tryLoadLocalDataset() {
   const response = await fetch("/data/signs.nl.json");
-  if (!response.ok) {
-    throw new Error(`HTTP ${response.status}`);
-  }
-
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const payload = await response.json();
-  if (!payload.signs || payload.signs.length === 0) {
-    throw new Error("Lege lokale dataset");
-  }
-
+  if (!payload.signs || payload.signs.length === 0) throw new Error("Lege lokale dataset");
   signs = enrichSigns(payload.signs);
   setDataStatus("");
 }
@@ -641,7 +551,6 @@ async function loadSigns() {
       setDataStatus("");
     }
   }
-
   fillCategorySelect();
   applyFilters();
 }
@@ -651,24 +560,15 @@ refs.signImage.addEventListener("error", () => {
 });
 
 refs.trackTraffic.addEventListener("click", () => switchTrack("traffic"));
-refs.trackBoaBasic.addEventListener("click", () => switchTrack("boa-basic"));
-refs.trackBoaOv.addEventListener("click", () => switchTrack("boa-ov"));
+refs.trackBoa.addEventListener("click", () => switchTrack("boa"));
 
-refs.boaBasicModeMc.addEventListener("click", () => switchBoaMode("basic", "mc"));
-refs.boaBasicModeWritten.addEventListener("click", () => switchBoaMode("basic", "written"));
-refs.boaBasicNext.addEventListener("click", () => nextBoaMc("basic"));
-refs.boaBasicReset.addEventListener("click", () => resetBoaMc("basic"));
-refs.boaBasicShowModel.addEventListener("click", () => showBoaModelAnswer("basic"));
-refs.boaBasicWrittenNext.addEventListener("click", () => nextBoaWritten("basic"));
-refs.boaBasicWrittenReset.addEventListener("click", () => resetBoaWritten("basic"));
-
-refs.boaOvModeMc.addEventListener("click", () => switchBoaMode("ov", "mc"));
-refs.boaOvModeWritten.addEventListener("click", () => switchBoaMode("ov", "written"));
-refs.boaOvNext.addEventListener("click", () => nextBoaMc("ov"));
-refs.boaOvReset.addEventListener("click", () => resetBoaMc("ov"));
-refs.boaOvShowModel.addEventListener("click", () => showBoaModelAnswer("ov"));
-refs.boaOvWrittenNext.addEventListener("click", () => nextBoaWritten("ov"));
-refs.boaOvWrittenReset.addEventListener("click", () => resetBoaWritten("ov"));
+refs.boaModeMc.addEventListener("click", () => switchBoaMode("mc"));
+refs.boaModeWritten.addEventListener("click", () => switchBoaMode("written"));
+refs.boaNext.addEventListener("click", nextBoaMc);
+refs.boaReset.addEventListener("click", resetBoaMc);
+refs.boaShowModel.addEventListener("click", showBoaModelAnswer);
+refs.boaWrittenNext.addEventListener("click", nextBoaWritten);
+refs.boaWrittenReset.addEventListener("click", resetBoaWritten);
 
 refs.categorySelect.addEventListener("change", applyFilters);
 refs.searchInput.addEventListener("input", applyFilters);
@@ -686,10 +586,7 @@ refs.shuffleCards.addEventListener("click", () => {
 
 refs.leftColumn.addEventListener("click", (event) => {
   const button = event.target.closest("button.match-item");
-  if (!button || button.disabled) {
-    return;
-  }
-
+  if (!button || button.disabled) return;
   state.selectedLeft = button.dataset.id;
   renderMatching();
   tryMatch();
@@ -697,10 +594,7 @@ refs.leftColumn.addEventListener("click", (event) => {
 
 refs.rightColumn.addEventListener("click", (event) => {
   const button = event.target.closest("button.match-item");
-  if (!button || button.disabled) {
-    return;
-  }
-
+  if (!button || button.disabled) return;
   state.selectedRight = button.dataset.id;
   renderMatching();
   tryMatch();
@@ -710,10 +604,8 @@ refs.newRound.addEventListener("click", setupMatchingRound);
 
 switchTrack("traffic");
 switchMode("flashcards");
-switchBoaMode("basic", "mc");
-switchBoaMode("ov", "mc");
-loadBoaModule("basic", "/data/boa-basic.json");
-loadBoaModule("ov", "/data/boa-ov.json");
+switchBoaMode("mc");
+loadBoaData();
 fillCategorySelect();
 applyFilters();
 loadSigns();
