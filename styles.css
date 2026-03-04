@@ -85,6 +85,27 @@ button:hover {
   gap: 0.6rem;
 }
 
+.track-switch {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+}
+
+.track-switch button.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+.track-view {
+  display: none;
+  gap: 1rem;
+}
+
+.track-view.active {
+  display: grid;
+}
+
 .mode-switch button.active {
   background: var(--accent);
   color: #fff;
@@ -209,12 +230,77 @@ button:hover {
   color: var(--warn);
 }
 
+.study-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.study-item {
+  border: 1px solid var(--edge);
+  border-radius: 12px;
+  padding: 0.8rem;
+  background: #f8fbff;
+}
+
+.study-item h3 {
+  margin: 0 0 0.35rem;
+}
+
+.study-item p {
+  margin: 0;
+}
+
+.quiz-card {
+  border: 1px solid var(--edge);
+  border-radius: 14px;
+  padding: 1rem;
+  background: #f8fbff;
+}
+
+.quiz-question {
+  margin: 0 0 1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.quiz-options {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.quiz-option.correct {
+  background: #e9fce9;
+  border-color: #86efac;
+  color: #166534;
+}
+
+.quiz-option.wrong {
+  background: #fef2f2;
+  border-color: #fecaca;
+  color: #b91c1c;
+}
+
+.quiz-actions {
+  margin-top: 0.8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+}
+
 @media (max-width: 760px) {
+  .track-switch {
+    grid-template-columns: 1fr;
+  }
+
   .flash-actions {
     grid-template-columns: 1fr 1fr;
   }
 
   .match-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quiz-actions {
     grid-template-columns: 1fr;
   }
 }

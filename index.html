@@ -3,76 +3,112 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Scooter Theorie Trainer</title>
+  <title>BOA & Verkeersborden Trainer</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <main class="app">
     <header class="hero">
-      <p class="eyebrow">Rijbewijs AM</p>
-      <h1>Scooter Theorie Trainer</h1>
-      <p>Oefen verkeersborden met flashcards en een matching game.</p>
+      <p class="eyebrow">Theorie Platform</p>
+      <h1>BOA & Verkeersborden Trainer</h1>
+      <p>Kies een module en oefen gericht.</p>
       <p id="data-status" class="meta"></p>
     </header>
 
-    <section class="controls card">
-      <div>
-        <label for="category-select">Categorie</label>
-        <select id="category-select"></select>
-      </div>
-      <div>
-        <label for="search-input">Zoeken</label>
-        <input id="search-input" type="text" placeholder="Bijv. maximumsnelheid" />
-      </div>
-      <div>
-        <label for="pair-count">Matching paren</label>
-        <select id="pair-count">
-          <option value="6">6</option>
-          <option value="8" selected>8</option>
-          <option value="10">10</option>
-        </select>
-      </div>
+    <section class="track-switch">
+      <button id="track-traffic" class="active">Verkeersborden</button>
+      <button id="track-boa-basic">BOA Basisbekwaamheid</button>
+      <button id="track-boa-ov">BOA Openbaar Vervoer</button>
     </section>
 
-    <section class="mode-switch">
-      <button id="flashcards-tab" class="active">Flashcards</button>
-      <button id="matching-tab">Matching</button>
-    </section>
-
-    <section id="flashcards-view" class="card mode-view active">
-      <p id="flashcard-counter" class="meta"></p>
-      <article id="flashcard" class="flashcard">
-        <div class="sign-front">
-          <img id="sign-image" class="sign-image" alt="Verkeersbord" />
-          <p id="sign-code" class="sign-code"></p>
-        </div>
-        <div class="sign-back">
-          <h3>Betekenis</h3>
-          <p id="sign-meaning"></p>
-        </div>
-      </article>
-      <div class="flash-actions">
-        <button id="prev-card">Vorige</button>
-        <button id="flip-card">Draai kaart</button>
-        <button id="next-card">Volgende</button>
-        <button id="shuffle-cards">Shuffle</button>
-      </div>
-    </section>
-
-    <section id="matching-view" class="card mode-view">
-      <div class="match-meta">
-        <p id="matching-score">Score: 0</p>
-        <button id="new-round">Nieuwe ronde</button>
-      </div>
-      <p class="meta">Klik eerst een bord links en daarna de juiste betekenis rechts.</p>
-      <div class="match-grid">
+    <section id="traffic-view" class="track-view active">
+      <section class="controls card">
         <div>
-          <h3>Borden</h3>
-          <div id="left-column" class="match-column"></div>
+          <label for="category-select">Categorie</label>
+          <select id="category-select"></select>
         </div>
         <div>
-          <h3>Betekenissen</h3>
-          <div id="right-column" class="match-column"></div>
+          <label for="search-input">Zoeken</label>
+          <input id="search-input" type="text" placeholder="Bijv. maximumsnelheid" />
+        </div>
+        <div>
+          <label for="pair-count">Matching paren</label>
+          <select id="pair-count">
+            <option value="6">6</option>
+            <option value="8" selected>8</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="mode-switch">
+        <button id="flashcards-tab" class="active">Flashcards</button>
+        <button id="matching-tab">Matching</button>
+      </section>
+
+      <section id="flashcards-view" class="card mode-view active">
+        <p id="flashcard-counter" class="meta"></p>
+        <article id="flashcard" class="flashcard">
+          <div class="sign-front">
+            <img id="sign-image" class="sign-image" alt="Verkeersbord" />
+            <p id="sign-code" class="sign-code"></p>
+          </div>
+          <div class="sign-back">
+            <h3>Betekenis</h3>
+            <p id="sign-meaning"></p>
+          </div>
+        </article>
+        <div class="flash-actions">
+          <button id="prev-card">Vorige</button>
+          <button id="flip-card">Draai kaart</button>
+          <button id="next-card">Volgende</button>
+          <button id="shuffle-cards">Shuffle</button>
+        </div>
+      </section>
+
+      <section id="matching-view" class="card mode-view">
+        <div class="match-meta">
+          <p id="matching-score">Score: 0</p>
+          <button id="new-round">Nieuwe ronde</button>
+        </div>
+        <p class="meta">Klik eerst een bord links en daarna de juiste betekenis rechts.</p>
+        <div class="match-grid">
+          <div>
+            <h3>Borden</h3>
+            <div id="left-column" class="match-column"></div>
+          </div>
+          <div>
+            <h3>Betekenissen</h3>
+            <div id="right-column" class="match-column"></div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="boa-basic-view" class="track-view card">
+      <h2>BOA Basisbekwaamheid</h2>
+      <p id="boa-basic-meta" class="meta"></p>
+      <div class="quiz-card">
+        <p id="boa-basic-question" class="quiz-question"></p>
+        <div id="boa-basic-options" class="quiz-options"></div>
+        <p id="boa-basic-feedback" class="meta"></p>
+        <div class="quiz-actions">
+          <button id="boa-basic-next">Volgende vraag</button>
+          <button id="boa-basic-reset">Opnieuw starten</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="boa-ov-view" class="track-view card">
+      <h2>BOA Openbaar Vervoer</h2>
+      <p id="boa-ov-meta" class="meta"></p>
+      <div class="quiz-card">
+        <p id="boa-ov-question" class="quiz-question"></p>
+        <div id="boa-ov-options" class="quiz-options"></div>
+        <p id="boa-ov-feedback" class="meta"></p>
+        <div class="quiz-actions">
+          <button id="boa-ov-next">Volgende vraag</button>
+          <button id="boa-ov-reset">Opnieuw starten</button>
         </div>
       </div>
     </section>
