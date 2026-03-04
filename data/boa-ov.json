@@ -1,0 +1,68 @@
+﻿{
+  "mc": [
+    {
+      "question": "Wat is bij toezicht in het OV de eerste prioriteit?",
+      "options": [
+        "Veiligheid van reizigers en personeel",
+        "Zo snel mogelijk bekeuren",
+        "Alleen ticketcontrole uitvoeren",
+        "Wachten op eindhalte"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "question": "Hoe handel je bij een conflict in een trein?",
+      "options": [
+        "De-escaleren en volgens protocol opschalen",
+        "Direct fysieke dwang toepassen",
+        "Conflicten negeren",
+        "Alleen filmen"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "question": "Waarom is samenwerking met politie en vervoerder belangrijk?",
+      "options": [
+        "Voor snelle en veilige incidentafhandeling",
+        "Alleen voor administratie",
+        "Omdat BOA niet zelfstandig mag optreden",
+        "Om boetes te voorkomen"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "question": "Wat leg je na een OV-incident minimaal vast?",
+      "options": [
+        "Tijd, plaats, betrokkenen en feiten",
+        "Alleen namen van getuigen",
+        "Alleen eigen conclusie",
+        "Niets, alleen mondeling"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "question": "Wat hoort bij goed perrontoezicht?",
+      "options": [
+        "Risicogericht handelen en doorstroming bewaken",
+        "Alleen aanspreken op kleding",
+        "Uitsluitend kaartcontrole",
+        "Alleen optreden bij spits"
+      ],
+      "correctIndex": 0
+    }
+  ],
+  "written": [
+    {
+      "question": "Beschrijf stap voor stap hoe je een agressie-incident in het OV veilig afhandelt.",
+      "modelAnswer": "Beoordeel risico direct, positioneer veilig, de-escaleer verbaal, scheid betrokkenen waar mogelijk, vraag ondersteuning, en leg daarna objectief vast wat is gebeurd."
+    },
+    {
+      "question": "Hoe combineer je handhaving en gastvrijheid in het OV?",
+      "modelAnswer": "Door duidelijk en respectvol op te treden, regels uit te leggen, consequent te handelen en escalatie te voorkomen zonder je handhavingstaak los te laten."
+    },
+    {
+      "question": "Noem de belangrijkste onderdelen van een incidentrapport in OV-context.",
+      "modelAnswer": "Datum/tijd, locatie, betrokkenen, feitelijke toedracht, genomen maatregelen, eventuele ondersteuning en relevante bewijsbronnen."
+    }
+  ]
+}

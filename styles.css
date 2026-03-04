@@ -85,6 +85,12 @@ button:hover {
   gap: 0.6rem;
 }
 
+.boa-mode-switch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+}
+
 .track-switch {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -117,6 +123,14 @@ button:hover {
 }
 
 .mode-view.active {
+  display: block;
+}
+
+.boa-mode-view {
+  display: none;
+}
+
+.boa-mode-view.active {
   display: block;
 }
 
@@ -282,9 +296,23 @@ button:hover {
 
 .quiz-actions {
   margin-top: 0.8rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 0.6rem;
+}
+
+.quiz-actions button {
+  width: auto;
+}
+
+.written-input {
+  width: 100%;
+  border: 1px solid #cdd8e6;
+  border-radius: 10px;
+  padding: 0.7rem;
+  font: inherit;
+  resize: vertical;
+  background: #fff;
 }
 
 @media (max-width: 760px) {
@@ -301,6 +329,10 @@ button:hover {
   }
 
   .quiz-actions {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .quiz-actions button {
+    width: 100%;
   }
 }

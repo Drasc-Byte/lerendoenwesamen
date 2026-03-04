@@ -1,0 +1,69 @@
+﻿{
+  "mc": [
+    {
+      "question": "Welke voorwaarde geldt bij bevoegd optreden als BOA?",
+      "options": [
+        "Er moet een wettelijke grondslag zijn",
+        "Alleen toestemming van de burger is genoeg",
+        "Je mag handelen op basis van intuïtie",
+        "Een mondelinge instructie is altijd voldoende"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bevoegdheden moeten altijd op een wettelijke basis rusten."
+    },
+    {
+      "question": "Wat hoort in een goed proces-verbaal thuis?",
+      "options": [
+        "Objectieve feiten en waarnemingen",
+        "Persoonlijke meningen van de BOA",
+        "Alleen de conclusie",
+        "Alleen verklaringen van omstanders"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "question": "Wat betekent subsidiariteit?",
+      "options": [
+        "Kiezen voor het minst ingrijpende effectieve middel",
+        "Altijd het zwaarste middel gebruiken",
+        "Nooit optreden bij weerstand",
+        "Alleen mondeling waarschuwen"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "question": "Wat betekent proportionaliteit?",
+      "options": [
+        "Het middel staat in verhouding tot het doel",
+        "Eerst waarschuwen, nooit bekeuren",
+        "Altijd dezelfde sanctie toepassen",
+        "Alleen optreden bij heterdaad"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "question": "Wat is belangrijk bij legitimatievordering?",
+      "options": [
+        "Duidelijk aangeven op welke grond je vordert",
+        "Nooit uitleg geven",
+        "Altijd alleen met politie erbij",
+        "Alleen schriftelijk vorderen"
+      ],
+      "correctIndex": 0
+    }
+  ],
+  "written": [
+    {
+      "question": "Leg in eigen woorden uit wanneer je als BOA de-escalerend moet optreden.",
+      "modelAnswer": "De-escalatie gebruik je direct wanneer spanning oploopt: rustig blijven, duidelijk communiceren, afstand en veiligheid bewaken en zo nodig ondersteuning vragen."
+    },
+    {
+      "question": "Beschrijf de opbouw van een zorgvuldig proces-verbaal.",
+      "modelAnswer": "Begin met tijd, plaats en betrokkenen, noteer feitelijke waarnemingen chronologisch, benoem relevante wetsartikelen en sluit af met een heldere, objectieve conclusie."
+    },
+    {
+      "question": "Noem het verschil tussen een feit en een interpretatie in rapportage.",
+      "modelAnswer": "Een feit is concreet waarneembaar (bijv. 'persoon liep door rood'). Een interpretatie is een uitleg of vermoeden (bijv. 'persoon had haast')."
+    }
+  ]
+}
