@@ -1,0 +1,13 @@
+﻿{
+  "name": "rouchelle",
+  "version": "1.0.0",
+  "description": "Dutch scooter theory study website",
+  "main": "index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "private": true
+}

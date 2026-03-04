@@ -1,0 +1,1258 @@
+{
+  "generatedAt": "2026-02-28T13:11:59.244Z",
+  "signs": [
+    {
+      "code": "A1",
+      "name": "Maximum snelheid",
+      "meaning": "Maximum snelheid",
+      "category": "Snelheid",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/A1.png"
+    },
+    {
+      "code": "A2",
+      "name": "Einde maximum snelheid",
+      "meaning": "Einde maximum snelheid",
+      "category": "Snelheid",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/A2.png"
+    },
+    {
+      "code": "A3",
+      "name": "Maximumsnelheid op een electronisch signaleringsbord",
+      "meaning": "Maximumsnelheid op een electronisch signaleringsbord",
+      "category": "Snelheid",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/A3.png"
+    },
+    {
+      "code": "A4",
+      "name": "Adviessnelheid",
+      "meaning": "Adviessnelheid",
+      "category": "Snelheid",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/A4.png"
+    },
+    {
+      "code": "A5",
+      "name": "Einde adviessnelheid",
+      "meaning": "Einde adviessnelheid",
+      "category": "Snelheid",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/A5.png"
+    },
+    {
+      "code": "B1",
+      "name": "Voorrangsweg",
+      "meaning": "Voorrangsweg",
+      "category": "Voorrang",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/B1.png"
+    },
+    {
+      "code": "B2",
+      "name": "Einde voorrangsweg",
+      "meaning": "Einde voorrangsweg",
+      "category": "Voorrang",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/B2.png"
+    },
+    {
+      "code": "B3",
+      "name": "Voorrangskruispunt",
+      "meaning": "Voorrangskruispunt",
+      "category": "Voorrang",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/B3.png"
+    },
+    {
+      "code": "B4",
+      "name": "Voorrangskruispunt Zijweg links",
+      "meaning": "Voorrangskruispunt Zijweg links",
+      "category": "Voorrang",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/B4.png"
+    },
+    {
+      "code": "B5",
+      "name": "Voorrangskruispunt Zijweg rechts",
+      "meaning": "Voorrangskruispunt Zijweg rechts",
+      "category": "Voorrang",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/B5.png"
+    },
+    {
+      "code": "B6",
+      "name": "Verleen voorrang aan bestuurders op de kruisende weg",
+      "meaning": "Verleen voorrang aan bestuurders op de kruisende weg",
+      "category": "Voorrang",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/B6.png"
+    },
+    {
+      "code": "B7",
+      "name": "Stop; verleen voorrang aan bestuurders op de kruisende weg",
+      "meaning": "Stop; verleen voorrang aan bestuurders op de kruisende weg",
+      "category": "Voorrang",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/B7.png"
+    },
+    {
+      "code": "BB01",
+      "name": "bilingual version: exit sign of controlled-access roads.",
+      "meaning": "bilingual version: exit sign of controlled-access roads.",
+      "category": "Voorrang",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/NL-C2f_OB705.svg"
+    },
+    {
+      "code": "C1",
+      "name": "Gesloten in beide richtingen voor voertuigen, ruiters en geleiders van rij- of trekdieren of vee",
+      "meaning": "Gesloten in beide richtingen voor voertuigen, ruiters en geleiders van rij- of trekdieren of vee",
+      "category": "Verbod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/C1.png"
+    },
+    {
+      "code": "C2",
+      "name": "Eenrichtingsweg, in deze richting gesloten voor voertuigen, ruiters en geleiders van rij- of trekdieren of vee",
+      "meaning": "Eenrichtingsweg, in deze richting gesloten voor voertuigen, ruiters en geleiders van rij- of trekdieren of vee",
+      "category": "Verbod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/C2.png"
+    },
+    {
+      "code": "C3",
+      "name": "Eenrichtingsweg",
+      "meaning": "Eenrichtingsweg",
+      "category": "Verbod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/C3.png"
+    },
+    {
+      "code": "C4",
+      "name": "Eenrichtingsweg",
+      "meaning": "Eenrichtingsweg",
+      "category": "Verbod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/C4.png"
+    },
+    {
+      "code": "C5",
+      "name": "Inrijden toegestaan",
+      "meaning": "Inrijden toegestaan",
+      "category": "Verbod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/C5.png"
+    },
+    {
+      "code": "C6",
+      "name": "Gesloten voor motorvoertuigen op meer dan twee wielen",
+      "meaning": "Gesloten voor motorvoertuigen op meer dan twee wielen",
+      "category": "Verbod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/C6.png"
+    },
+    {
+      "code": "C7",
+      "name": "Gesloten voor vrachtauto's",
+      "meaning": "Gesloten voor vrachtauto's",
+      "category": "Verbod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/C7.png"
+    },
+    {
+      "code": "C7A",
+      "name": "Gesloten voor autobussen en vrachtauto's",
+      "meaning": "Gesloten voor autobussen en vrachtauto's",
+      "category": "Verbod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/C7b.png"
+    },
+    {
+      "code": "C7B",
+      "name": "No access for buses and trucks.",
+      "meaning": "No access for buses and trucks.",
+      "category": "Verbod",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Nederlands_verkeersbord_C7b_2023.svg"
+    },
+    {
+      "code": "C8",
+      "name": "Gesloten voor motorvoertuigen die niet sneller kunnen of mogen rijden dan 25 km/h",
+      "meaning": "Gesloten voor motorvoertuigen die niet sneller kunnen of mogen rijden dan 25 km/h",
+      "category": "Verbod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/C8.png"
+    },
+    {
+      "code": "C9",
+      "name": "Gesloten voor ruiters, vee, wagens, motorvoertuigen die niet sneller kunnen of mogen rijden dan 25 km/h en brommobielen alsmede fietsen, bromfietsen en gehandicaptenvoertuigen",
+      "meaning": "Gesloten voor ruiters, vee, wagens, motorvoertuigen die niet sneller kunnen of mogen rijden dan 25 km/h en brommobielen alsmede fietsen, bromfietsen en gehandicaptenvoertuigen",
+      "category": "Verbod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/C9.png"
+    },
+    {
+      "code": "C10",
+      "name": "Gesloten voor motorvoertuigen met aanhangwagen",
+      "meaning": "Gesloten voor motorvoertuigen met aanhangwagen",
+      "category": "Verbod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/C10.png"
+    },
+    {
+      "code": "C11",
+      "name": "Gesloten voor motorfietsen",
+      "meaning": "Gesloten voor motorfietsen",
+      "category": "Verbod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/C11.png"
+    },
+    {
+      "code": "C12",
+      "name": "Gesloten voor alle motorvoertuigen",
+      "meaning": "Gesloten voor alle motorvoertuigen",
+      "category": "Verbod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/C12.png"
+    },
+    {
+      "code": "C13",
+      "name": "Gesloten voor bromfietsen, snorfietsen en gehandicaptenvoertuigen, met in werking zijnde motor",
+      "meaning": "Gesloten voor bromfietsen, snorfietsen en gehandicaptenvoertuigen, met in werking zijnde motor",
+      "category": "Verbod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/C13.png"
+    },
+    {
+      "code": "C14",
+      "name": "Gesloten voor fietsen en voor gehandicaptenvoertuigen zonder motor",
+      "meaning": "Gesloten voor fietsen en voor gehandicaptenvoertuigen zonder motor",
+      "category": "Verbod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/C14.png"
+    },
+    {
+      "code": "C15",
+      "name": "Gesloten voor fietsen, bromfietsen en gehandicaptenvoertuigen",
+      "meaning": "Gesloten voor fietsen, bromfietsen en gehandicaptenvoertuigen",
+      "category": "Verbod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/C15.png"
+    },
+    {
+      "code": "C16",
+      "name": "Gesloten voor voetgangers",
+      "meaning": "Gesloten voor voetgangers",
+      "category": "Verbod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/C16.png"
+    },
+    {
+      "code": "C17",
+      "name": "Gesloten voor voertuigen en samenstellen van voertuigen die, met inbegrip van de lading, langer zijn dan op het bord is aangegeven",
+      "meaning": "Gesloten voor voertuigen en samenstellen van voertuigen die, met inbegrip van de lading, langer zijn dan op het bord is aangegeven",
+      "category": "Verbod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/C17.png"
+    },
+    {
+      "code": "C18",
+      "name": "Gesloten voor voertuigen die, met inbegrip van de lading, breder zijn dan op het bord is aangegeven",
+      "meaning": "Gesloten voor voertuigen die, met inbegrip van de lading, breder zijn dan op het bord is aangegeven",
+      "category": "Verbod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/C18.png"
+    },
+    {
+      "code": "C19",
+      "name": "Gesloten voor voertuigen die, met inbegrip van de lading, hoger zijn dan op het bord is aangegeven",
+      "meaning": "Gesloten voor voertuigen die, met inbegrip van de lading, hoger zijn dan op het bord is aangegeven",
+      "category": "Verbod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/C19.png"
+    },
+    {
+      "code": "C20",
+      "name": "Gesloten voor voertuigen waarvan de aslast hoger is dan op het bord is aangegeven",
+      "meaning": "Gesloten voor voertuigen waarvan de aslast hoger is dan op het bord is aangegeven",
+      "category": "Verbod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/C20.png"
+    },
+    {
+      "code": "C21",
+      "name": "Gesloten voor voertuigen en samenstellen van voertuigen, waarvan de totaalmassa hoger is dan op het bord is aangegeven",
+      "meaning": "Gesloten voor voertuigen en samenstellen van voertuigen, waarvan de totaalmassa hoger is dan op het bord is aangegeven",
+      "category": "Verbod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/C21.png"
+    },
+    {
+      "code": "C22",
+      "name": "Gesloten voor voertuigen met bepaalde gevaarlijke stoffen",
+      "meaning": "Gesloten voor voertuigen met bepaalde gevaarlijke stoffen",
+      "category": "Verbod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/C22.png"
+    },
+    {
+      "code": "C22A",
+      "name": "Gesloten voor vrachtauto's die niet voldoen aan de eisen, genoemd in artikel 86d",
+      "meaning": "Gesloten voor vrachtauto's die niet voldoen aan de eisen, genoemd in artikel 86d",
+      "category": "Verbod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/C22a.png"
+    },
+    {
+      "code": "C22B",
+      "name": "Einde geslotenverklaring voor vrachtauto's die niet voldoen aan de eisen, genoemd in artikel 86d",
+      "meaning": "Einde geslotenverklaring voor vrachtauto's die niet voldoen aan de eisen, genoemd in artikel 86d",
+      "category": "Verbod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/C22b.png"
+    },
+    {
+      "code": "C22C",
+      "name": "Einde geslotenverklaring nul-emissiezone",
+      "meaning": "Einde geslotenverklaring nul-emissiezone",
+      "category": "Verbod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/C22d.png"
+    },
+    {
+      "code": "C22E",
+      "name": "Environmental zone: no access for vehicles not compliant with article 86d of RVV 1990",
+      "meaning": "Environmental zone: no access for vehicles not compliant with article 86d of RVV 1990",
+      "category": "Verbod",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Nederlands_verkeersbord_C22e_2026.svg"
+    },
+    {
+      "code": "C22F",
+      "name": "End of environmental- (zero-emission) zone",
+      "meaning": "End of environmental- (zero-emission) zone",
+      "category": "Verbod",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/NL-C22e1.svg"
+    },
+    {
+      "code": "D1",
+      "name": "Rotonde; verplichte rijrichting",
+      "meaning": "Rotonde; verplichte rijrichting",
+      "category": "Gebod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/D1.png"
+    },
+    {
+      "code": "D2",
+      "name": "Gebod voor alle bestuurders het bord voorbij te gaan aan de zijde die de pijl aangeeft",
+      "meaning": "Gebod voor alle bestuurders het bord voorbij te gaan aan de zijde die de pijl aangeeft",
+      "category": "Gebod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/D2.png"
+    },
+    {
+      "code": "D3",
+      "name": "Bord mag aan beide zijden worden voorbijgegaan",
+      "meaning": "Bord mag aan beide zijden worden voorbijgegaan",
+      "category": "Gebod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/D3.png"
+    },
+    {
+      "code": "D4",
+      "name": "Gebod tot het volgen van de rijrichting die op het bord is aangegeven",
+      "meaning": "Gebod tot het volgen van de rijrichting die op het bord is aangegeven",
+      "category": "Gebod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/D4.png"
+    },
+    {
+      "code": "D5",
+      "name": "Gebod tot het volgen van de rijrichting die op het bord is aangegeven",
+      "meaning": "Gebod tot het volgen van de rijrichting die op het bord is aangegeven",
+      "category": "Gebod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/D5.png"
+    },
+    {
+      "code": "D6",
+      "name": "Gebod tot het volgen van &eacute;&eacute;n van de rijrichtingen die op het bord zijn aangegeven",
+      "meaning": "Gebod tot het volgen van &eacute;&eacute;n van de rijrichtingen die op het bord zijn aangegeven",
+      "category": "Gebod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/D6.png"
+    },
+    {
+      "code": "D7",
+      "name": "Gebod tot het volgen van &eacute;&eacute;n van de rijrichtingen die op het bord zijn aangegeven",
+      "meaning": "Gebod tot het volgen van &eacute;&eacute;n van de rijrichtingen die op het bord zijn aangegeven",
+      "category": "Gebod",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/D7.png"
+    },
+    {
+      "code": "E1",
+      "name": "Parkeerverbod",
+      "meaning": "Parkeerverbod",
+      "category": "Parkeren",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/E1.png"
+    },
+    {
+      "code": "E2",
+      "name": "Verbod stil te staan",
+      "meaning": "Verbod stil te staan",
+      "category": "Parkeren",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/E2.png"
+    },
+    {
+      "code": "E3",
+      "name": "Verbod fietsen en bromfietsen te plaatsen",
+      "meaning": "Verbod fietsen en bromfietsen te plaatsen",
+      "category": "Parkeren",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/E3.png"
+    },
+    {
+      "code": "E4",
+      "name": "Parkeergelegenheid",
+      "meaning": "Parkeergelegenheid",
+      "category": "Parkeren",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/E4.png"
+    },
+    {
+      "code": "E5",
+      "name": "Taxistandplaats",
+      "meaning": "Taxistandplaats",
+      "category": "Parkeren",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/E5.png"
+    },
+    {
+      "code": "E6",
+      "name": "Gehandicaptenparkeerplaats",
+      "meaning": "Gehandicaptenparkeerplaats",
+      "category": "Parkeren",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/E6.png"
+    },
+    {
+      "code": "E7",
+      "name": "Gelegenheid bestemd voor het onmiddellijk laden en lossen van goederen",
+      "meaning": "Gelegenheid bestemd voor het onmiddellijk laden en lossen van goederen",
+      "category": "Parkeren",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/E7.png"
+    },
+    {
+      "code": "E8",
+      "name": "Parkeergelegenheid alleen bestemd voor de voertuigcategorie of groep voertuigen die op het bord is aangegeven",
+      "meaning": "Parkeergelegenheid alleen bestemd voor de voertuigcategorie of groep voertuigen die op het bord is aangegeven",
+      "category": "Parkeren",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/E8.png"
+    },
+    {
+      "code": "E9",
+      "name": "Parkeergelegenheid alleen bestemd voor vergunninghouders",
+      "meaning": "Parkeergelegenheid alleen bestemd voor vergunninghouders",
+      "category": "Parkeren",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/E9.png"
+    },
+    {
+      "code": "E10",
+      "name": "Parkeerschijf-zone met verplicht gebruik van parkeerschijf, tevens parkeerverbod indien er langer wordt geparkeerd dan de parkeerduur die op het bord is aangegeven",
+      "meaning": "Parkeerschijf-zone met verplicht gebruik van parkeerschijf, tevens parkeerverbod indien er langer wordt geparkeerd dan de parkeerduur die op het bord is aangegeven",
+      "category": "Parkeren",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/E10.png"
+    },
+    {
+      "code": "E11",
+      "name": "Einde parkeerschijf-zone met verplicht gebruik van parkeerschijf",
+      "meaning": "Einde parkeerschijf-zone met verplicht gebruik van parkeerschijf",
+      "category": "Parkeren",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/E11.png"
+    },
+    {
+      "code": "E12",
+      "name": "Parkeergelegenheid ten behoeve van overstappers op het openbaar vervoer",
+      "meaning": "Parkeergelegenheid ten behoeve van overstappers op het openbaar vervoer",
+      "category": "Parkeren",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/E12.png"
+    },
+    {
+      "code": "E13",
+      "name": "Parkeergelegenheid ten behoeve van carpoolers",
+      "meaning": "Parkeergelegenheid ten behoeve van carpoolers",
+      "category": "Parkeren",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/E13.png"
+    },
+    {
+      "code": "F1",
+      "name": "Verbod voor motorvoertuigen om elkaar onderling in te halen",
+      "meaning": "Verbod voor motorvoertuigen om elkaar onderling in te halen",
+      "category": "Gedrag",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/F1.png"
+    },
+    {
+      "code": "F2",
+      "name": "Einde verbod voor motorvoertuigen om elkaar onderling in te halen",
+      "meaning": "Einde verbod voor motorvoertuigen om elkaar onderling in te halen",
+      "category": "Gedrag",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/F2.png"
+    },
+    {
+      "code": "F3",
+      "name": "Verbod voor vrachtauto's om motorvoertuigen in te halen",
+      "meaning": "Verbod voor vrachtauto's om motorvoertuigen in te halen",
+      "category": "Gedrag",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/F3.png"
+    },
+    {
+      "code": "F4",
+      "name": "Einde verbod voor vrachtauto's om motorvoertuigen in te halen",
+      "meaning": "Einde verbod voor vrachtauto's om motorvoertuigen in te halen",
+      "category": "Gedrag",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/F4.png"
+    },
+    {
+      "code": "F5",
+      "name": "Verbod voor bestuurders door te gaan bij nadering van verkeer uit tegengestelde richting",
+      "meaning": "Verbod voor bestuurders door te gaan bij nadering van verkeer uit tegengestelde richting",
+      "category": "Gedrag",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/F5.png"
+    },
+    {
+      "code": "F6",
+      "name": "Bestuurders uit tegengestelde richting moeten verkeer dat van deze richting nadert voor laten gaan",
+      "meaning": "Bestuurders uit tegengestelde richting moeten verkeer dat van deze richting nadert voor laten gaan",
+      "category": "Gedrag",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/F6.png"
+    },
+    {
+      "code": "F7",
+      "name": "Keerverbod",
+      "meaning": "Keerverbod",
+      "category": "Gedrag",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/F7.png"
+    },
+    {
+      "code": "F8",
+      "name": "Einde van alle door verkeersborden aangegeven verboden",
+      "meaning": "Einde van alle door verkeersborden aangegeven verboden",
+      "category": "Gedrag",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/F8.png"
+    },
+    {
+      "code": "F9",
+      "name": "Einde van alle door verkeersborden aangegeven verboden en adviezen op een electronisch signaleringsbord",
+      "meaning": "Einde van alle door verkeersborden aangegeven verboden en adviezen op een electronisch signaleringsbord",
+      "category": "Gedrag",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/F9.png"
+    },
+    {
+      "code": "F10",
+      "name": "Stop. In het bord kan worden aangegeven door wie of waarom het bord wordt toegepast",
+      "meaning": "Stop. In het bord kan worden aangegeven door wie of waarom het bord wordt toegepast",
+      "category": "Gedrag",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/F10.png"
+    },
+    {
+      "code": "F11",
+      "name": "Verplicht gebruik passeerbaan of passeerstrook (rijbaan of -strook om ingehaald te kunnen worden), uitsluitend bestemd voor motorvoertuigen die niet sneller kunnen of mogen rijden dan 25 km/h",
+      "meaning": "Verplicht gebruik passeerbaan of passeerstrook (rijbaan of -strook om ingehaald te kunnen worden), uitsluitend bestemd voor motorvoertuigen die niet sneller kunnen of mogen rijden dan 25 km/h",
+      "category": "Gedrag",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/F11.png"
+    },
+    {
+      "code": "F12",
+      "name": "Einde verplicht gebruik passeerbaan of passeerstrook voor motorvoertuigen die niet sneller kunnen of mogen rijden dan 25 km/h",
+      "meaning": "Einde verplicht gebruik passeerbaan of passeerstrook voor motorvoertuigen die niet sneller kunnen of mogen rijden dan 25 km/h",
+      "category": "Gedrag",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/F12.png"
+    },
+    {
+      "code": "F13",
+      "name": "Rijbaan of -strook uitsluitend ten behoeve van lijnbussen",
+      "meaning": "Rijbaan of -strook uitsluitend ten behoeve van lijnbussen",
+      "category": "Gedrag",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/F13.png"
+    },
+    {
+      "code": "F14",
+      "name": "Einde busbaan of -strook",
+      "meaning": "Einde busbaan of -strook",
+      "category": "Gedrag",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/F14.png"
+    },
+    {
+      "code": "F15",
+      "name": "Rijbaan of -strook uitsluitend ten behoeve van trams",
+      "meaning": "Rijbaan of -strook uitsluitend ten behoeve van trams",
+      "category": "Gedrag",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/F15.png"
+    },
+    {
+      "code": "F16",
+      "name": "Einde trambaan of -strook",
+      "meaning": "Einde trambaan of -strook",
+      "category": "Gedrag",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/F16.png"
+    },
+    {
+      "code": "F17",
+      "name": "Rijbaan of -strook uitsluitend ten behoeve van lijnbussen en trams",
+      "meaning": "Rijbaan of -strook uitsluitend ten behoeve van lijnbussen en trams",
+      "category": "Gedrag",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/F17.png"
+    },
+    {
+      "code": "F18",
+      "name": "Einde bus- en trambaan of -strook",
+      "meaning": "Einde bus- en trambaan of -strook",
+      "category": "Gedrag",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/F18.png"
+    },
+    {
+      "code": "F19",
+      "name": "Rijbaan of -strook uitsluitend ten behoeve van vrachtauto's en lijnbussen",
+      "meaning": "Rijbaan of -strook uitsluitend ten behoeve van vrachtauto's en lijnbussen",
+      "category": "Gedrag",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/F19.png"
+    },
+    {
+      "code": "F20",
+      "name": "Einde rijbaan of -strook voor vrachtauto's en lijnbussen",
+      "meaning": "Einde rijbaan of -strook voor vrachtauto's en lijnbussen",
+      "category": "Gedrag",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/F20.png"
+    },
+    {
+      "code": "F21",
+      "name": "Rijbaan of -strook uitsluitend ten behoeve van vrachtauto's",
+      "meaning": "Rijbaan of -strook uitsluitend ten behoeve van vrachtauto's",
+      "category": "Gedrag",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/F21.png"
+    },
+    {
+      "code": "F22",
+      "name": "Einde rijbaan of -strook voor vrachtauto's",
+      "meaning": "Einde rijbaan of -strook voor vrachtauto's",
+      "category": "Gedrag",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/F22.png"
+    },
+    {
+      "code": "G1",
+      "name": "Autosnelweg",
+      "meaning": "Autosnelweg",
+      "category": "Wegtype",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/G1.png"
+    },
+    {
+      "code": "G2",
+      "name": "Einde Autosnelweg",
+      "meaning": "Einde Autosnelweg",
+      "category": "Wegtype",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/G2.png"
+    },
+    {
+      "code": "G3",
+      "name": "Autoweg",
+      "meaning": "Autoweg",
+      "category": "Wegtype",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/G3.png"
+    },
+    {
+      "code": "G4",
+      "name": "Einde autoweg",
+      "meaning": "Einde autoweg",
+      "category": "Wegtype",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/G4.png"
+    },
+    {
+      "code": "G5",
+      "name": "Erf",
+      "meaning": "Erf",
+      "category": "Wegtype",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/G5.png"
+    },
+    {
+      "code": "G6",
+      "name": "Einde erf",
+      "meaning": "Einde erf",
+      "category": "Wegtype",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/G6.png"
+    },
+    {
+      "code": "G7",
+      "name": "Voetpad",
+      "meaning": "Voetpad",
+      "category": "Wegtype",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/G7.png"
+    },
+    {
+      "code": "G8",
+      "name": "Einde voetpad",
+      "meaning": "Einde voetpad",
+      "category": "Wegtype",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/G8.png"
+    },
+    {
+      "code": "G9",
+      "name": "Ruiterpad",
+      "meaning": "Ruiterpad",
+      "category": "Wegtype",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/G9.png"
+    },
+    {
+      "code": "G10",
+      "name": "Einde ruiterpad",
+      "meaning": "Einde ruiterpad",
+      "category": "Wegtype",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/G10.png"
+    },
+    {
+      "code": "G11",
+      "name": "Verplicht fietspad",
+      "meaning": "Verplicht fietspad",
+      "category": "Wegtype",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/G11.png"
+    },
+    {
+      "code": "G12",
+      "name": "Einde verplicht fietspad",
+      "meaning": "Einde verplicht fietspad",
+      "category": "Wegtype",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/G12.png"
+    },
+    {
+      "code": "G12A",
+      "name": "Fiets/bromfietspad",
+      "meaning": "Fiets/bromfietspad",
+      "category": "Wegtype",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/G12a.png"
+    },
+    {
+      "code": "G12B",
+      "name": "Einde fiets/bromfietspad",
+      "meaning": "Einde fiets/bromfietspad",
+      "category": "Wegtype",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/G12b.png"
+    },
+    {
+      "code": "G13",
+      "name": "Onverplicht fietspad",
+      "meaning": "Onverplicht fietspad",
+      "category": "Wegtype",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/G13.png"
+    },
+    {
+      "code": "G14",
+      "name": "Einde onverplicht fietspad",
+      "meaning": "Einde onverplicht fietspad",
+      "category": "Wegtype",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/G14.png"
+    },
+    {
+      "code": "H1",
+      "name": "Bebouwde kom",
+      "meaning": "Bebouwde kom",
+      "category": "Zone",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/H1.png"
+    },
+    {
+      "code": "H2",
+      "name": "Einde bebouwde kom",
+      "meaning": "Einde bebouwde kom",
+      "category": "Zone",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/H2.png"
+    },
+    {
+      "code": "J1",
+      "name": "Slecht wegdek",
+      "meaning": "Slecht wegdek",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J1.png"
+    },
+    {
+      "code": "J2",
+      "name": "Bocht naar rechts",
+      "meaning": "Bocht naar rechts",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J2.png"
+    },
+    {
+      "code": "J3",
+      "name": "Bocht naar links",
+      "meaning": "Bocht naar links",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J3.png"
+    },
+    {
+      "code": "J4",
+      "name": "S-bocht(en), eerst naar rechts",
+      "meaning": "S-bocht(en), eerst naar rechts",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J4.png"
+    },
+    {
+      "code": "J5",
+      "name": "S-bocht(en), eerst naar links",
+      "meaning": "S-bocht(en), eerst naar links",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J5.png"
+    },
+    {
+      "code": "J6",
+      "name": "Steile helling",
+      "meaning": "Steile helling",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J6.png"
+    },
+    {
+      "code": "J7",
+      "name": "Gevaarlijke daling",
+      "meaning": "Gevaarlijke daling",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J7.png"
+    },
+    {
+      "code": "J8",
+      "name": "Gevaarlijk kruispunt",
+      "meaning": "Gevaarlijk kruispunt",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J8.png"
+    },
+    {
+      "code": "J9",
+      "name": "Rotonde",
+      "meaning": "Rotonde",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J9.png"
+    },
+    {
+      "code": "J10",
+      "name": "Overweg met slagbomen",
+      "meaning": "Overweg met slagbomen",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J10.png"
+    },
+    {
+      "code": "J11",
+      "name": "Overweg zonder slagbomen",
+      "meaning": "Overweg zonder slagbomen",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J11.png"
+    },
+    {
+      "code": "J12",
+      "name": "Overweg met enkel spoor",
+      "meaning": "Overweg met enkel spoor",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J12.png"
+    },
+    {
+      "code": "J13",
+      "name": "Overweg met twee of meer sporen",
+      "meaning": "Overweg met twee of meer sporen",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J13.png"
+    },
+    {
+      "code": "J14",
+      "name": "Tram(kruising)",
+      "meaning": "Tram(kruising)",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J14.png"
+    },
+    {
+      "code": "J15",
+      "name": "Beweegbare brug",
+      "meaning": "Beweegbare brug",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J15.png"
+    },
+    {
+      "code": "J16",
+      "name": "Werk in uitvoering",
+      "meaning": "Werk in uitvoering",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J16.png"
+    },
+    {
+      "code": "J17",
+      "name": "Rijbaanversmalling",
+      "meaning": "Rijbaanversmalling",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J17.png"
+    },
+    {
+      "code": "J18",
+      "name": "Rijbaanversmalling rechts",
+      "meaning": "Rijbaanversmalling rechts",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J18.png"
+    },
+    {
+      "code": "J19",
+      "name": "Rijbaanversmalling links",
+      "meaning": "Rijbaanversmalling links",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J19.png"
+    },
+    {
+      "code": "J20",
+      "name": "Slipgevaar",
+      "meaning": "Slipgevaar",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J20.png"
+    },
+    {
+      "code": "J21",
+      "name": "Kinderen",
+      "meaning": "Kinderen",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J21.png"
+    },
+    {
+      "code": "J22",
+      "name": "Voetgangersoversteekplaats",
+      "meaning": "Voetgangersoversteekplaats",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J22.png"
+    },
+    {
+      "code": "J23",
+      "name": "Voetgangers",
+      "meaning": "Voetgangers",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J23.png"
+    },
+    {
+      "code": "J24",
+      "name": "Fietsers en bromfietsers",
+      "meaning": "Fietsers en bromfietsers",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J24.png"
+    },
+    {
+      "code": "J25",
+      "name": "Losliggende stenen",
+      "meaning": "Losliggende stenen",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J25.png"
+    },
+    {
+      "code": "J26",
+      "name": "Kade of rivieroever",
+      "meaning": "Kade of rivieroever",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J26.png"
+    },
+    {
+      "code": "J27",
+      "name": "Groot wild",
+      "meaning": "Groot wild",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J27.png"
+    },
+    {
+      "code": "J28",
+      "name": "Vee",
+      "meaning": "Vee",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J28.png"
+    },
+    {
+      "code": "J29",
+      "name": "Tegenliggers",
+      "meaning": "Tegenliggers",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J29.png"
+    },
+    {
+      "code": "J30",
+      "name": "Laagvliegende vliegtuigen",
+      "meaning": "Laagvliegende vliegtuigen",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J30.png"
+    },
+    {
+      "code": "J31",
+      "name": "Zijwind",
+      "meaning": "Zijwind",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J31.png"
+    },
+    {
+      "code": "J32",
+      "name": "Verkeerslichten",
+      "meaning": "Verkeerslichten",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J32.png"
+    },
+    {
+      "code": "J33",
+      "name": "File",
+      "meaning": "File",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J33.png"
+    },
+    {
+      "code": "J34",
+      "name": "Ongeval",
+      "meaning": "Ongeval",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J34.png"
+    },
+    {
+      "code": "J35",
+      "name": "Slecht zicht door sneeuw, regen of mist",
+      "meaning": "Slecht zicht door sneeuw, regen of mist",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J35.png"
+    },
+    {
+      "code": "J36",
+      "name": "IJzel of sneeuw",
+      "meaning": "IJzel of sneeuw",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J36.png"
+    },
+    {
+      "code": "J37",
+      "name": "Gevaar (de aard van het gevaar is aangegeven op het onderbord",
+      "meaning": "Gevaar (de aard van het gevaar is aangegeven op het onderbord",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J37.png"
+    },
+    {
+      "code": "J38",
+      "name": "Verkeersdrempel",
+      "meaning": "Verkeersdrempel",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J38.png"
+    },
+    {
+      "code": "J39",
+      "name": "elektrische in- en uitschuifbare paal",
+      "meaning": "elektrische in- en uitschuifbare paal",
+      "category": "Waarschuwing",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/J39.png"
+    },
+    {
+      "code": "K1",
+      "name": "Lage beslissingwegwijzer langs autosnelweg voor de doorgaande richting, met interlokale doelen en routenummer autosnelweg",
+      "meaning": "Lage beslissingwegwijzer langs autosnelweg voor de doorgaande richting, met interlokale doelen en routenummer autosnelweg",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/K1.png"
+    },
+    {
+      "code": "K2",
+      "name": "Voorwegwijzer langs autosnelweg voor de afgaande richting, met afstandaanduiding, interlokale doelen (bovenste doel = afritnaam), verwijzing naar vliegveld/luchthaven en routenummer niet-autosnelweg",
+      "meaning": "Voorwegwijzer langs autosnelweg voor de afgaande richting, met afstandaanduiding, interlokale doelen (bovenste doel = afritnaam), verwijzing naar vliegveld/luchthaven en routenummer niet-autosnelweg",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/K2.png"
+    },
+    {
+      "code": "K3",
+      "name": "Beslissingswegwijzer langs autosnelweg voor de afgaande richting naar een verzorginsgsplaats, met de naam van de parkeerplaats en symbolen die de aard van de voorzieningen aangeven",
+      "meaning": "Beslissingswegwijzer langs autosnelweg voor de afgaande richting naar een verzorginsgsplaats, met de naam van de parkeerplaats en symbolen die de aard van de voorzieningen aangeven",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/K3.png"
+    },
+    {
+      "code": "K4",
+      "name": "Hoge beslissingswegwijzer langs autosnelweg met rijstrookpaneel voor de doorgaande richting en aftakkingspaneel voor de afgaande richting, met interlokale doelen, routenummers autosnelwegen en Europese hoofdroutes",
+      "meaning": "Hoge beslissingswegwijzer langs autosnelweg met rijstrookpaneel voor de doorgaande richting en aftakkingspaneel voor de afgaande richting, met interlokale doelen, routenummers autosnelwegen en Europese hoofdroutes",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/K4.png"
+    },
+    {
+      "code": "K5",
+      "name": "Voorwegwijzer langs niet-autosnelweg, met interlokale doelen, routenummers, viaductsymbool en aanduiding industrieterrein",
+      "meaning": "Voorwegwijzer langs niet-autosnelweg, met interlokale doelen, routenummers, viaductsymbool en aanduiding industrieterrein",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/K5.png"
+    },
+    {
+      "code": "K6",
+      "name": "Beslissingswegwijzer langs niet-autosnelweg met interlokale doelen en routenummer niet-autosnelweg",
+      "meaning": "Beslissingswegwijzer langs niet-autosnelweg met interlokale doelen en routenummer niet-autosnelweg",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/K6.png"
+    },
+    {
+      "code": "K7",
+      "name": "Wegwijzer voor fietsers en bromfietsers (handwijzer), met lokaal doel, interlokaal doel, stedelijk fietsroutenummer (boven), en met interlokale doelen en interlokaal fietsroutenummer (onder)",
+      "meaning": "Wegwijzer voor fietsers en bromfietsers (handwijzer), met lokaal doel, interlokaal doel, stedelijk fietsroutenummer (boven), en met interlokale doelen en interlokaal fietsroutenummer (onder)",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/K7.png"
+    },
+    {
+      "code": "K8",
+      "name": "Wegwijzer voor fietsers en bromfietsers (stapelbord), met interlokale doelen en een via een alternatieve route te bereiken doel (cursief)",
+      "meaning": "Wegwijzer voor fietsers en bromfietsers (stapelbord), met interlokale doelen en een via een alternatieve route te bereiken doel (cursief)",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/K8.png"
+    },
+    {
+      "code": "K9",
+      "name": "Omleiding. Maatregel op voorwegwijzer langs niet-autosnelweg",
+      "meaning": "Omleiding. Maatregel op voorwegwijzer langs niet-autosnelweg",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/K9.png"
+    },
+    {
+      "code": "K10",
+      "name": "Voorwegwijzer binnen de bebouwde kom met interlokaal doel, lokaal doel, een dagrecreatiecentrum, objecten en stadsroutenummers",
+      "meaning": "Voorwegwijzer binnen de bebouwde kom met interlokaal doel, lokaal doel, een dagrecreatiecentrum, objecten en stadsroutenummers",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/K10.png"
+    },
+    {
+      "code": "K11",
+      "name": "Voorsorteren op niet-autosnelweg. Bord met interlokale doelen, routenummers en verwijzing naar autosnelweg",
+      "meaning": "Voorsorteren op niet-autosnelweg. Bord met interlokale doelen, routenummers en verwijzing naar autosnelweg",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/K11.png"
+    },
+    {
+      "code": "K12",
+      "name": "Wijkwegwijzer binnen de bebouwde kom, met wijknamen (in verkeersgebieden)",
+      "meaning": "Wijkwegwijzer binnen de bebouwde kom, met wijknamen (in verkeersgebieden)",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/K12.png"
+    },
+    {
+      "code": "K13",
+      "name": "Wijkwegwijzer binnen de bebouwde kom, met wijknummers (in verkeersgebieden)",
+      "meaning": "Wijkwegwijzer binnen de bebouwde kom, met wijknummers (in verkeersgebieden)",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/K13.png"
+    },
+    {
+      "code": "K14",
+      "name": "Route voor het vervoer van bepaalde gevaarlijke stoffen",
+      "meaning": "Route voor het vervoer van bepaalde gevaarlijke stoffen",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/K14.png"
+    },
+    {
+      "code": "L1",
+      "name": "Hoogte onderdoorgang",
+      "meaning": "Hoogte onderdoorgang",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/L1.png"
+    },
+    {
+      "code": "L2",
+      "name": "Voetgangersoversteekplaats",
+      "meaning": "Voetgangersoversteekplaats",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/L2.png"
+    },
+    {
+      "code": "L3",
+      "name": "Bushalte/tramhalte",
+      "meaning": "Bushalte/tramhalte",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/L3.png"
+    },
+    {
+      "code": "L3A",
+      "name": "Tram stop/bus stop",
+      "meaning": "Tram stop/bus stop",
+      "category": "Informatie",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Nederlands_verkeersbord_L3a.svg"
+    },
+    {
+      "code": "L3B",
+      "name": "Bus stop",
+      "meaning": "Bus stop",
+      "category": "Informatie",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Nederlands_verkeersbord_L3b.svg"
+    },
+    {
+      "code": "L3C",
+      "name": "Tram stop",
+      "meaning": "Tram stop",
+      "category": "Informatie",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Nederlands_verkeersbord_L3c.svg"
+    },
+    {
+      "code": "L4",
+      "name": "Voorsorteren",
+      "meaning": "Voorsorteren",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/L4.png"
+    },
+    {
+      "code": "L5",
+      "name": "Einde rijstrook",
+      "meaning": "Einde rijstrook",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/L5.png"
+    },
+    {
+      "code": "L6",
+      "name": "Splitsing",
+      "meaning": "Splitsing",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/L6.png"
+    },
+    {
+      "code": "L7",
+      "name": "Aantal doorgaande rijstroken",
+      "meaning": "Aantal doorgaande rijstroken",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/L7.png"
+    },
+    {
+      "code": "L8",
+      "name": "Doodlopende weg",
+      "meaning": "Doodlopende weg",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/L8.png"
+    },
+    {
+      "code": "L9",
+      "name": "Vooraanduiding doodlopende weg",
+      "meaning": "Vooraanduiding doodlopende weg",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/L9.png"
+    },
+    {
+      "code": "L10",
+      "name": "Vooraanduiding verkeersmaatregel voor de aangegeven richting",
+      "meaning": "Vooraanduiding verkeersmaatregel voor de aangegeven richting",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/L10.png"
+    },
+    {
+      "code": "L11",
+      "name": "Verkeersbord geldt alleen voor de aangegeven rijstrook/rijstroken",
+      "meaning": "Verkeersbord geldt alleen voor de aangegeven rijstrook/rijstroken",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/L11.png"
+    },
+    {
+      "code": "L12",
+      "name": "Verkeersbord geldt alleen voor de aangegeven rijstrook",
+      "meaning": "Verkeersbord geldt alleen voor de aangegeven rijstrook",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/L12.png"
+    },
+    {
+      "code": "L13",
+      "name": "Verkeerstunnel",
+      "meaning": "Verkeerstunnel",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/L13.png"
+    },
+    {
+      "code": "L14",
+      "name": "Vluchthaven",
+      "meaning": "Vluchthaven",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/L14.png"
+    },
+    {
+      "code": "L15",
+      "name": "Vluchthaven voorzien van een noodtelefoon en brandblusapparaat",
+      "meaning": "Vluchthaven voorzien van een noodtelefoon en brandblusapparaat",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/L15.png"
+    },
+    {
+      "code": "L16",
+      "name": "Noodtelefoon",
+      "meaning": "Noodtelefoon",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/L16.png"
+    },
+    {
+      "code": "L17",
+      "name": "Brandblusapparaat",
+      "meaning": "Brandblusapparaat",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/L17.png"
+    },
+    {
+      "code": "L18",
+      "name": "Noodtelefoon en brandblusapparaat",
+      "meaning": "Noodtelefoon en brandblusapparaat",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/L18.png"
+    },
+    {
+      "code": "L19",
+      "name": "Dichtstbijzijnde uitgang of twee dichtstbijzijnde uitgangen in de op het bord aangegeven richting en afstand",
+      "meaning": "Dichtstbijzijnde uitgang of twee dichtstbijzijnde uitgangen in de op het bord aangegeven richting en afstand",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/L19.png"
+    },
+    {
+      "code": "L20",
+      "name": "Uitwijkplaats rechts van de weg",
+      "meaning": "Uitwijkplaats rechts van de weg",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/L20.png"
+    },
+    {
+      "code": "L21",
+      "name": "Uitwijkplaats links van de weg",
+      "meaning": "Uitwijkplaats links van de weg",
+      "category": "Informatie",
+      "image": "https://www.bijzondereverrichting.nl/regels/borden/L21.png"
+    }
+  ]
+}
