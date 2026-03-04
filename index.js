@@ -52,6 +52,17 @@ function cleanText(value) {
     .trim();
 }
 
+function buildMeaning(code, name, rawMeaning) {
+  const cleanName = cleanText(name || code);
+  const cleanMeaning = cleanText(rawMeaning || "");
+
+  if (!cleanMeaning || cleanMeaning.toLowerCase() === cleanName.toLowerCase()) {
+    return `Dit verkeersbord betekent: ${cleanName}.`;
+  }
+
+  return cleanMeaning;
+}
+
 function normalizeSign(input) {
   const code = String(input.code || "").trim().toUpperCase();
   if (!code) {
@@ -59,7 +70,7 @@ function normalizeSign(input) {
   }
 
   const name = cleanText(input.name || code);
-  const meaning = cleanText(input.meaning || name || code);
+  const meaning = buildMeaning(code, name, input.meaning);
 
   return {
     code,
