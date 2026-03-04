@@ -336,3 +336,8 @@ button:hover {
     width: 100%;
   }
 }
+
+#data-status {
+  display: none;
+}
+

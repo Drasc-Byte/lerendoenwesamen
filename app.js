@@ -166,6 +166,12 @@ function getBoaRefs(module) {
       };
 }
 
+function setDataStatus(message) {
+  if (refs.dataStatus) {
+    refs.dataStatus.textContent = message || "";
+  }
+}
+
 function switchTrack(track) {
   state.track = track;
   const isTraffic = track === "traffic";
@@ -606,7 +612,7 @@ async function tryLoadFromApi() {
   const dateText = payload.retrievedAt ? new Date(payload.retrievedAt).toLocaleString("nl-NL") : "onbekend";
   const sourceText = payload.sourceName || "externe bron";
   const statusText = payload.sourceStatus ? ` (${payload.sourceStatus})` : "";
-  refs.dataStatus.textContent = `${signs.length} borden geladen. Bron: ${sourceText}${statusText}. Laatst opgehaald: ${dateText}.`;
+  setDataStatus("");
 }
 
 async function tryLoadLocalDataset() {
@@ -621,7 +627,7 @@ async function tryLoadLocalDataset() {
   }
 
   signs = enrichSigns(payload.signs);
-  refs.dataStatus.textContent = `${signs.length} borden geladen vanuit lokale dataset.`;
+  setDataStatus("");
 }
 
 async function loadSigns() {
@@ -632,7 +638,7 @@ async function loadSigns() {
       await tryLoadLocalDataset();
     } catch (_localError) {
       signs = [];
-      refs.dataStatus.textContent = "Data laden mislukt. Controleer of je via npm start draait.";
+      setDataStatus("");
     }
   }
 
