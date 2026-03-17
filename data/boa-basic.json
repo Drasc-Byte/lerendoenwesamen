@@ -1,4 +1,4 @@
-﻿{
+{
   "mc": [
     {
       "question": "Welke voorwaarde geldt bij bevoegd optreden als BOA?",
@@ -577,6 +577,314 @@
     {
       "question": "Beschrijf de volgorde en functie van rekwisitoir, pleidooi en het laatste woord in een strafzitting.",
       "modelAnswer": "In het rekwisitoir bespreekt de officier bewijs en strafeis, daarna voert de verdediging pleidooi, en vervolgens krijgt de verdachte het wettelijk laatste woord."
+    },
+    {
+      "question": "Wat houdt het legaliteitsbeginsel in (Artikel 1 Wetboek van Strafrecht)?",
+      "modelAnswer": "Geen feit is strafbaar dan uit kracht van een daaraan voorafgegane wettelijke strafbepaling. Dit betekent dat je alleen gestraft kunt worden voor iets wat op het moment van de handeling al bij wet verboden was."
+    },
+    {
+      "question": "Wie is de voorzitter van zowel de gemeenteraad als het college van burgemeester en wethouders (B&W)?",
+      "modelAnswer": "De burgemeester. De burgemeester heeft een dubbelrol: hij/zij is voorzitter van de gemeenteraad en van het college van B&W."
+    },
+    {
+      "question": "Wat is een kenmerk van de Wet op de economische delicten (WED)?",
+      "modelAnswer": "Het is een 'raamwet' waarin overtredingen van andere wetten (zoals de Milieuwet) strafbaar worden gesteld. De WED koppelt strafbepalingen aan wetten die zelf geen strafmaten bevatten, vaak op het gebied van milieu, economie en ordening."
+    },
+    {
+      "question": "Onder welke voorwaarde mag een verdachte worden 'opgehouden voor onderzoek'?",
+      "modelAnswer": "Wanneer het belang van het onderzoek dit vordert en er sprake is van een strafbaar feit waarvoor voorlopige hechtenis is toegelaten. Het ophouden voor onderzoek is een ingrijpende maatregel die aan strikte wettelijke regels is gebonden."
+    },
+    {
+      "question": "Wie benoemt de Commissaris van de Koning?",
+      "modelAnswer": "De Kroon (de Koning en de ministers). Net als de burgemeester wordt de Commissaris van de Koning bij Koninklijk Besluit benoemd."
+    },
+    {
+      "question": "Wat is de maximale termijn voor de 'inverzekeringstelling'?",
+      "modelAnswer": "3 dagen, met een mogelijke verlenging van nogmaals 3 dagen. De inverzekeringstelling vindt plaats na het ophouden voor onderzoek en wordt bevolen door de officier van justitie."
+    },
+    {
+      "question": "Onder welke voorwaarde mag een opsporingsambtenaar een persoon aan de kleding fouilleren?",
+      "modelAnswer": "Wanneer er ernstige bezwaren zijn en het belang van het onderzoek dit vordert. De veiligheidsfouillering en de fouillering aan de kleding (Art. 56 Sv) zijn gebonden aan strikte voorwaarden zoals ernstige bezwaren tegen de verdachte."
+    },
+    {
+      "question": "Wat is een kernkenmerk van de Halt-afdoening?",
+      "modelAnswer": "Het is een vrijwillig alternatief voor een strafrechtelijke vervolging voor jongeren van 12 tot 18 jaar. Halt voorkomt een strafblad voor kleine vergrijpen, mits de jongere de opdracht succesvol afrondt en de schade vergoedt."
+    },
+    {
+      "question": "Tot welke categorie van de Wet wapens en munitie (WWM) behoren voorwerpen die geen wapen zijn, maar door hun aard als zodanig worden gebruikt (zoals een honkbalknuppel tijdens een demonstratie)?",
+      "modelAnswer": "Categorie IV Categorie IV omvat blanke wapens en voorwerpen die door de omstandigheden waarin ze worden aangetroffen redelijkerwijs als wapen kunnen dienen."
+    },
+    {
+      "question": "Wie is bevoegd om de 'uitlevering' van een in beslag te nemen voorwerp te vorderen?",
+      "modelAnswer": "Elke opsporingsambtenaar. Op grond van Artikel 96a Sv is elke opsporingsambtenaar bevoegd om de uitlevering van een voor de inbeslagneming vatbaar voorwerp te vorderen."
+    },
+    {
+      "question": "Wat houdt het begrip 'heterdaad' precies in volgens de tekst?",
+      "modelAnswer": "Wanneer het strafbaar feit ontdekt wordt terwijl het begaan wordt of terstond nadat het begaan is. Bij ontdekking op heterdaad zijn de bevoegdheden van zowel burgers (aanhouden) als opsporingsambtenaren ruimer."
+    },
+    {
+      "question": "Mag een BOA een woning binnentreden zonder toestemming van de bewoner om een verdachte aan te houden?",
+      "modelAnswer": "Ja, mits hij in het bezit is van een schriftelijke machtiging tot binnentreden. De Algemene wet op het binnentreden stelt dat voor binnentreden tegen de wil van de bewoner een schriftelijke machtiging vereist is, tenzij er sprake is van noodhulp."
+    },
+    {
+      "question": "Wat is het verschil tussen Lijst I en Lijst II van de Opiumwet?",
+      "modelAnswer": "Lijst I bevat harddrugs met een onaanvaardbaar risico; Lijst II bevat softdrugs zoals cannabis. Lijst I omvat middelen als heroine en cocaine (harddrugs). Lijst II omvat middelen als hasj en weed (softdrugs)."
+    },
+    {
+      "question": "Wat is een verplicht onderdeel van de cautie die aan een verdachte wordt gegeven?",
+      "modelAnswer": "De mededeling dat hij niet tot antwoorden verplicht is. Op grond van Artikel 29 Sv moet de verdachte voor elk verhoor worden gewezen op zijn zwijgrecht."
+    },
+    {
+      "question": "Wanneer spreekt men in een proces-verbaal van een 'getuige'?",
+      "modelAnswer": "Wanneer iemand feiten of omstandigheden kan verklaren die hij zelf heeft waargenomen of ondervonden. Een getuige verklaart over wat hij met zijn eigen zintuigen heeft gezien, gehoord of geroken."
+    },
+    {
+      "question": "Wat houdt het 'spreekrecht' voor slachtoffers in tijdens een rechtszitting?",
+      "modelAnswer": "Het slachtoffer mag vertellen wat de impact van het misdrijf op zijn of haar leven is geweest. Bij ernstige delicten hebben slachtoffers of nabestaanden het recht om tijdens de zitting een verklaring af te leggen."
+    },
+    {
+      "question": "Wie is verantwoordelijk voor het vaststellen van de dood volgens de Wet op de lijkbezorging?",
+      "modelAnswer": "Een bevoegde arts. Een opsporingsambtenaar stelt nooit de dood vast; dit moet altijd door een arts gebeuren via een verklaring van overlijden."
+    },
+    {
+      "question": "Wat moet een BOA doen als hij een proces-verbaal opmaakt van een verhoor waarbij de verdachte weigert te tekenen?",
+      "modelAnswer": "In het proces-verbaal vermelden dat de verdachte weigert te tekenen en de reden hiervan (indien bekend). Een verdachte is niet verplicht te tekenen; de BOA noteert dan simpelweg 'weigert te tekenen'."
+    },
+    {
+      "question": "Wat is een 'voorwaardelijk sepot'?",
+      "modelAnswer": "De Officier van Justitie besluit niet te vervolgen, mits de verdachte zich binnen een proeftijd aan bepaalde voorwaarden houdt. Bij een voorwaardelijk sepot wordt de vervolging uitgesteld. Als de verdachte de voorwaarden schendt, kan de zaak alsnog voor de rechter komen."
+    },
+    {
+      "question": "Wie is bevoegd om een 'strafbeschikking' (OM-afdoening) op te leggen voor veelvoorkomende strafbare feiten?",
+      "modelAnswer": "De Officier van Justitie. Met een strafbeschikking kan het OM zelf een straf opleggen (zoals een geldboete) zonder tussenkomst van de rechter."
+    },
+    {
+      "question": "Wat wordt bedoeld met 'verbeurdverklaring' als bijkomende straf?",
+      "modelAnswer": "Voorwerpen die te maken hebben met het strafbare feit worden definitief aan de verdachte ontnomen. Verbeurdverklaring kan worden opgelegd voor voorwerpen waarmee het feit is begaan of die met de opbrengst ervan zijn verkregen."
+    },
+    {
+      "question": "Wat is een 'erkenning' in het kader van de Wet wapens en munitie (WWM)?",
+      "modelAnswer": "Een vergunning voor de handel in of het herstellen van wapens en munitie. Bedrijven zoals wapenhandelaren hebben een erkenning nodig van de korpschef om hun beroep uit te mogen oefenen."
+    },
+    {
+      "question": "Welke term wordt gebruikt voor het besluit van het OM om iemand NIET te vervolgen wegens gebrek aan bewijs?",
+      "modelAnswer": "Technisch sepot. Een technisch sepot wordt toegepast als er onvoldoende wettig en overtuigend bewijs is om een veroordeling te krijgen."
+    },
+    {
+      "question": "Wanneer is er sprake van 'vrijwillige terugtred' bij een strafbare poging?",
+      "modelAnswer": "Als de dader uit eigen beweging afziet van het voltooien van het misdrijf voordat het is voltooid. Bij vrijwillige terugtred is de dader niet strafbaar voor de poging, omdat hij zelf besloot het misdrijf niet door te zetten."
+    },
+    {
+      "question": "Wat is het hoofddoel van de voorgeleiding van een verdachte aan de (hulp)officier van justitie?",
+      "modelAnswer": "Om te toetsen of de aanhouding rechtmatig is geweest en te beslissen over de verdere vrijheidsbeneming. De (hulp)officier controleert of de BOA de juiste procedures heeft gevolgd en of er voldoende grond is om de verdachte langer vast te houden."
+    },
+    {
+      "question": "Wat wordt in de WED verstaan onder 'economische delicten' van de eerste categorie?",
+      "modelAnswer": "Misdrijven en overtredingen die de economische ordening of het milieu ernstig schaden. De WED deelt feiten in categorieen in om de zwaarte van de straf en de opsporingsbevoegdheden te bepalen."
+    },
+    {
+      "question": "Een BOA houdt een verdachte aan buiten heterdaad. Wat is hiervoor in de meeste gevallen vereist?",
+      "modelAnswer": "Een voorafgaand bevel van de officier van justitie. Buiten heterdaad is de bevoegdheid tot aanhouding beperkt en meestal voorbehouden aan de officier van justitie, tenzij de BOA een specifiek bevel heeft."
+    },
+    {
+      "question": "Welke rol heeft de korpschef van de nationale politie ten aanzien van de BOA?",
+      "modelAnswer": "Hij treedt vaak op als de toezichthouder (namens de Minister) voor de operationele uitvoering. De korpschef heeft een toezichthoudende rol om ervoor te zorgen dat BOA's hun bevoegdheden correct en bekwaam uitoefenen."
+    },
+    {
+      "question": "Wat is een 'proces-verbaal van bevindingen'?",
+      "modelAnswer": "Een document waarin de BOA opschrijft wat hij zelf heeft waargenomen of gedaan. In een proces-verbaal van bevindingen legt de BOA feitelijk vast wat hij heeft gezien, gehoord of geroken tijdens zijn dienst."
+    },
+    {
+      "question": "Wat is het verschil tussen een rechtvaardigingsgrond en een schulduitsluitingsgrond?",
+      "modelAnswer": "Bij een rechtvaardigingsgrond is het feit niet meer strafbaar; bij een schulduitsluitingsgrond is het feit wel strafbaar, maar de dader niet. Bij een rechtvaardigingsgrond vervalt de strafbaarheid van het feit. Bij een schulduitsluitingsgrond blijft het feit strafbaar, maar wordt de dader niet persoonlijk verwijtbaar geacht."
+    },
+    {
+      "question": "Wanneer is er sprake van 'noodweer' (Artikel 41 lid 1 Sr)?",
+      "modelAnswer": "Bij de noodzakelijke verdediging van eigen of eens anders lijf, eerbaarheid of goed tegen een ogenblikkelijke, wederrechtelijke aanranding. Noodweer is een rechtvaardigingsgrond. De verdediging moet proportioneel zijn en de aanranding moet op dat moment plaatsvinden."
+    },
+    {
+      "question": "Wat is een vereiste voor een strafbare 'poging' (Artikel 45 Sr)?",
+      "modelAnswer": "Het voornemen van de dader moet zich door een begin van uitvoering hebben geopenbaard. Een poging is alleen strafbaar bij misdrijven. Er moet een begin van uitvoering zijn; alleen voorbereiding of denken is niet genoeg."
+    },
+    {
+      "question": "Wat is het verschil tussen een 'medepleger' en een 'medeplichtige'?",
+      "modelAnswer": "Een medepleger voert het feit samen met een ander uit; een medeplichtige helpt alleen (bijvoorbeeld door op de uitkijk te staan). Medeplegen is samen en in vereniging. Medeplichtigheid is het verlenen van hulp of middelen. Medeplichtigheid bij overtredingen is niet strafbaar."
+    },
+    {
+      "question": "Wat houdt de schulduitsluitingsgrond 'noodweerexces' in?",
+      "modelAnswer": "De grenzen van de noodzakelijke verdediging worden overschreden door een hevige gemoedsbeweging die door de aanranding werd veroorzaakt. Bij noodweerexces ga je te ver in je verdediging, maar je bent niet strafbaar omdat je handelde uit een hevige gemoedsbeweging door de aanval."
+    },
+    {
+      "question": "Wat wordt bedoeld met de 'bewijskracht' van een proces-verbaal van een BOA?",
+      "modelAnswer": "Het levert dwingend bewijs op, tenzij het tegendeel wordt bewezen (bij be?digde opsporingsambtenaren). Op grond van de wet heeft een door een beedigd ambtenaar opgemaakt proces-verbaal een bijzondere bewijskracht."
+    },
+    {
+      "question": "Welk element moet verplicht worden opgenomen in de 'sluiting' van een proces-verbaal?",
+      "modelAnswer": "De vermelding dat het proces-verbaal 'op ambtseed' of 'op ambtsbelofte' is opgemaakt. Zonder deze specifieke tekst (de sluitingsformule) verliest het proces-verbaal zijn bijzondere bewijskracht."
+    },
+    {
+      "question": "Wat is een 'getuige-deskundige'?",
+      "modelAnswer": "Iemand die vanuit zijn specifieke kennis of wetenschap kan verklaren over wat hij heeft waargenomen. Een getuige-deskundige (zoals een arts of technisch specialist) combineert eigen waarneming met specifieke vakkennis."
+    },
+    {
+      "question": "Wanneer moet een BOA een proces-verbaal 'onverwijld' opmaken?",
+      "modelAnswer": "Zo snel als redelijkerwijs mogelijk is na de constatering van het feit. Onverwijld betekent zonder uitstel. Dit is belangrijk omdat de herinnering dan nog vers is."
+    },
+    {
+      "question": "Mag een BOA in een proces-verbaal zijn eigen vermoedens of conclusies opschrijven?",
+      "modelAnswer": "Nee, hij mag alleen feitelijke bevindingen opschrijven (wat hij heeft gezien, gehoord of geroken). Een proces-verbaal moet objectief zijn. De rechter trekt de conclusies op basis van de feiten die de BOA aanlevert."
+    },
+    {
+      "question": "Wat is het hoofddoel van de Wet politiegegevens (Wpg) voor een BOA?",
+      "modelAnswer": "Het bieden van een kader voor een zorgvuldige omgang met gegevens die worden verwerkt bij de uitvoering van de opsporingstaak. De Wpg regelt hoe opsporingsambtenaren om moeten gaan met privacygevoelige informatie die zij tijdens hun werk verzamelen."
+    },
+    {
+      "question": "Wanneer mag een BOA gebruikmaken van de bevoegdheid tot het 'vorderen van inzage in een identiteitsbewijs'?",
+      "modelAnswer": "Alleen als dat redelijkerwijs noodzakelijk is voor de uitvoering van zijn taak. Dit is vastgelegd in de Wet op de identificatieplicht. Er moet een concrete aanleiding zijn die verband houdt met de handhavingstaken van de BOA."
+    },
+    {
+      "question": "Wat is een kenmerk van de 'combi-bon'?",
+      "modelAnswer": "Het dient als proces-verbaal van constatering en als kennisgeving van bekeuring. De combi-bon is een efficiente manier om lichte overtredingen direct af te handelen."
+    },
+    {
+      "question": "Wat moet een BOA doen als een verdachte weigert zijn identiteitsbewijs te tonen?",
+      "modelAnswer": "De persoon aanhouden voor het niet voldoen aan de vordering (Art. 447 sub e Sr). Het niet tonen van een ID-bewijs terwijl dit rechtmatig gevorderd wordt, is een strafbaar feit waarvoor aangehouden kan worden."
+    },
+    {
+      "question": "Welke instantie is verantwoordelijk voor de inning van de boetes die door een BOA via een strafbeschikking worden opgelegd?",
+      "modelAnswer": "Het Centraal Justitieel Incassobureau (CJIB). Nadat de BOA de bon heeft verwerkt, verzorgt het CJIB de verdere administratieve afhandeling en inning."
+    },
+    {
+      "question": "Wat is een BOA verplicht te doen bij het eerste contact met een burger in het kader van zijn bevoegdheden?",
+      "modelAnswer": "Zichzelf direct legitimeren, zonder dat de burger hierom vraagt. Volgens de ambtsinstructie moet een BOA in burger zich ongevraagd legitimeren. In uniform gebeurt dit desgevraagd, maar proactieve legitimatie bij inzet van dwangmiddelen is essentieel."
+    },
+    {
+      "question": "Onder welke categorie van de Wet wapens en munitie valt een pepperspray-spuitbus?",
+      "modelAnswer": "Categorie II Wapens bedoeld om personen door giftige, verstikkende of weerloosmakende stoffen weerloos te maken (zoals pepperspray) vallen onder categorie II."
+    },
+    {
+      "question": "Wat wordt in de Alcoholwet verstaan onder 'doorschenken'?",
+      "modelAnswer": "Het schenken van alcohol aan iemand die al in kennelijke staat van dronkenschap verkeert. Vergunninghouders mogen geen alcohol verstrekken aan personen die zichtbaar dronken zijn; hierop kan door BOA's worden gehandhaafd."
+    },
+    {
+      "question": "Wat is het verschil tussen het 'dragen' en het 'vervoeren' van een wapen volgens de WWM?",
+      "modelAnswer": "Dragen betekent dat het wapen voor onmiddellijk gebruik gereed is; vervoeren betekent dat het wapen zodanig is ingepakt dat het niet direct te gebruiken is. Dit onderscheid is belangrijk voor de vraag of een vergunning of ontheffing vereist is."
+    },
+    {
+      "question": "Welke BOA-bevoegdheid hoort bij het controleren van de naleving van de Alcoholwet?",
+      "modelAnswer": "Het vorderen van inzage in de identiteitsbewijzen van aanwezige jongeren om de leeftijd vast te stellen. BOA's controleren o.a. in horeca of leeftijdsgrenzen (18+) worden nageleefd en mogen daarvoor een ID vorderen als dat nodig is voor de taakuitvoering."
+    },
+    {
+      "question": "Wat is een belangrijk kenmerk van de Wet op de economische delicten (WED)?",
+      "modelAnswer": "Overtredingen van wetten die in de WED worden genoemd, worden automatisch misdrijven of overtredingen op basis van de WED-classificatie. De WED is een raamwet. Als een wet onder de WED valt, bepaalt de WED de strafmaat en de opsporingsbevoegdheden."
+    },
+    {
+      "question": "Wanneer spreekt men van 'binnentreden ter hulpverlening'?",
+      "modelAnswer": "Wanneer er een redelijk vermoeden is dat er in de woning iemand in levensgevaar verkeert. Voor hulpverlening is geen schriftelijke machtiging nodig. Het doel is niet opsporing, maar het redden van levens of het voorkomen van acute schade."
+    },
+    {
+      "question": "Wat is het doel van de 'insluitingsfouillering'?",
+      "modelAnswer": "Vaststellen of de verdachte voorwerpen bij zich heeft die gevaarlijk zijn voor hemzelf of voor de veiligheid in de arrestantenruimte. Bij insluiting wordt de verdachte gecontroleerd op voorwerpen waarmee hij zichzelf of anderen letsel kan toebrengen."
+    },
+    {
+      "question": "Welke instantie houdt toezicht op de juiste verwerking van politiegegevens door een BOA?",
+      "modelAnswer": "De Autoriteit Persoonsgegevens (AP). De AP is de onafhankelijke toezichthouder die controleert of organisaties zich aan de privacywetgeving houden."
+    },
+    {
+      "question": "Mag een BOA geweld gebruiken bij het uitoefenen van zijn functie?",
+      "modelAnswer": "Ja, maar alleen als dit in de akte van opsporingsbevoegdheid is toegekend en het doel niet op een andere manier bereikt kan worden. Geweldgebruik is aan strikte regels gebonden (proportionaliteit en subsidiariteit) en moet altijd achteraf worden gemeld."
+    },
+    {
+      "question": "Wat is het belangrijkste kenmerk van de politierechter?",
+      "modelAnswer": "Hij behandelt eenvoudige strafzaken en beslist in zijn eentje. De politierechter spreekt alleen recht (unusrechtspraak) in zaken die feitelijk en juridisch relatief eenvoudig zijn."
+    },
+    {
+      "question": "Wanneer komt een strafzaak voor de Meervoudige Kamer (MK)?",
+      "modelAnswer": "Bij ingewikkelde of zware strafzaken (behandeling door drie rechters). Zware of complexere misdrijven worden door drie rechters behandeld om de zorgvuldigheid te waarborgen."
+    },
+    {
+      "question": "Wie heeft tijdens de terechtzitting het recht op het 'laatste woord'?",
+      "modelAnswer": "De verdachte. Voordat de rechter zich terugtrekt voor beraad, mag de verdachte altijd als laatste nog iets zeggen."
+    },
+    {
+      "question": "Wat is de rol van de 'griffier' tijdens een zitting?",
+      "modelAnswer": "Het maken van een officieel verslag (proces-verbaal) van de zitting. De griffier ondersteunt de rechter en legt officieel vast wat er tijdens de zitting wordt gezegd."
+    },
+    {
+      "question": "Wat wordt bedoeld met de 'onafhankelijkheid' van de rechter?",
+      "modelAnswer": "Niemand (ook de minister of de koning niet) mag de rechter vertellen hoe hij moet beslissen. De onafhankelijkheid van de rechterlijke macht is een steunpilaar van de rechtsstaat en waarborgt een eerlijk proces."
+    },
+    {
+      "question": "Onder welke categorie van de Wet wapens en munitie vallen voorwerpen die een sprekende gelijkenis vertonen met een echt vuurwapen (zoals speelgoedwapens)?",
+      "modelAnswer": "Categorie I Voorwerpen die sprekend lijken op vuurwapens vallen onder categorie I omdat ze dreigend kunnen worden gebruikt."
+    },
+    {
+      "question": "Wat is een kenmerk van de middelen op Lijst I van de Opiumwet?",
+      "modelAnswer": "Het zijn middelen met een onaanvaardbaar risico voor de gezondheid (harddrugs). Lijst I bevat harddrugs (bijv. cocaine, heroine, MDMA). Lijst II bevat softdrugs (bijv. cannabis)."
+    },
+    {
+      "question": "Wanneer mag een BOA een 'veiligheidsfouillering' uitvoeren bij een aangehouden verdachte?",
+      "modelAnswer": "Indien er uit feiten of omstandigheden blijkt dat er onmiddellijk gevaar dreigt voor de veiligheid van de BOA of derden. Een veiligheidsfouillering is een preventief dwangmiddel om te controleren op gevaarlijke voorwerpen die direct gebruikt kunnen worden."
+    },
+    {
+      "question": "Wat is een vereiste voor een BOA om een woning binnen te treden tegen de wil van de bewoner?",
+      "modelAnswer": "Een schriftelijke machtiging tot binnentreden (tenzij bij ontdekking op heterdaad ter aanhouding). Op basis van de Algemene wet op het binnentreden is doorgaans een schriftelijke machtiging vereist om het huisrecht te schenden."
+    },
+    {
+      "question": "Welke bevoegdheid heeft een BOA op basis van de Wet op de economische delicten (WED)?",
+      "modelAnswer": "Het vorderen van inzage in zakelijke gegevens en bescheiden. De WED geeft opsporingsambtenaren controlebevoegdheden, waaronder het inzien van administratie om economische overtredingen op te sporen."
+    },
+    {
+      "question": "Wie is in de rechtszaal verantwoordelijk voor de orde en heeft de leiding over het onderzoek op de zitting?",
+      "modelAnswer": "De voorzitter van de rechtbank (de rechter) De rechter zit de zitting voor, bewaakt de orde en zorgt dat het onderzoek ter zitting eerlijk en volgens de regels verloopt."
+    },
+    {
+      "question": "Wat wordt bedoeld met de 'unusrechtspraak'?",
+      "modelAnswer": "Rechtspraak door een enkele rechter (zoals de politierechter). Unus is Latijn voor een. De politierechter en de kantonrechter zijn voorbeelden van unusrechters."
+    },
+    {
+      "question": "Wat is de juiste volgorde van een terechtzitting?",
+      "modelAnswer": "Opening - Ondervraging verdachte - Requisitoir - Pleidooi - Laatste woord. De zitting begint met opening/persoonscontrole, daarna inhoudelijke behandeling. De officier houdt requisitoir, de advocaat pleidooi, en de verdachte heeft het laatste woord."
+    },
+    {
+      "question": "Wat is een 'getuige a decharge'?",
+      "modelAnswer": "Een getuige die door de verdediging is opgeroepen om de onschuld aan te tonen. A decharge betekent tot ontlasting. A charge betekent tot beschuldiging."
+    },
+    {
+      "question": "Wanneer mag een burger (geen BOA) iemand aanhouden?",
+      "modelAnswer": "Alleen bij ontdekking op heterdaad. Iedereen mag op basis van artikel 53 Sv een verdachte aanhouden bij heterdaad en direct overdragen aan de politie."
+    },
+    {
+      "question": "Een BOA treft een boksbeugel aan bij een verdachte. Onder welke categorie van de Wet wapens en munitie valt dit wapen?",
+      "modelAnswer": "Categorie I Wapens die geen ander doel dienen dan het toebrengen van letsel (zoals boksbeugels, vlindermessen en werpsterren) vallen onder categorie I en zijn verboden."
+    },
+    {
+      "question": "Wat is het belangrijkste verschil tussen Lijst I en Lijst II van de Opiumwet?",
+      "modelAnswer": "Lijst I bevat harddrugs (onaanvaardbaar risico), Lijst II bevat softdrugs (gering risico). Het onderscheid is gebaseerd op het risico voor de volksgezondheid. Harddrugs (I) worden strenger bestraft dan softdrugs (II)."
+    },
+    {
+      "question": "Welke bevoegdheid heeft een BOA op basis van de Wet op de economische delicten (WED) bij een vermoeden van een overtreding?",
+      "modelAnswer": "De BOA mag inzage vorderen in zakelijke gegevens en bescheiden. Voor de opsporing van economische delicten hebben opsporingsambtenaren de bevoegdheid om administratie en documenten in te zien."
+    },
+    {
+      "question": "Wanneer is er sprake van 'poging' tot een misdrijf?",
+      "modelAnswer": "Wanneer het voornemen van de dader zich door een begin van uitvoering heeft geopenbaard. Volgens art. 45 Sr is poging strafbaar als de dader is begonnen met de uitvoering maar het misdrijf niet is voltooid door omstandigheden buiten zijn wil."
+    },
+    {
+      "question": "Wat is de definitie van een Proces-Verbaal (PV) in de context van opsporing?",
+      "modelAnswer": "Een op de wettelijke wijze opgemaakt schriftelijk verslag van hetgeen door een opsporingsambtenaar is verricht of waargenomen. Een PV heeft bewijskracht omdat het op ambtseed of ambtsbelofte wordt opgemaakt door een beedigd ambtenaar."
+    },
+    {
+      "question": "Wat betekent het als de Officier van Justitie een zaak 'seponeert'?",
+      "modelAnswer": "De officier besluit om de verdachte niet (verder) te vervolgen. Seponeren kan bijvoorbeeld gebeuren wegens gebrek aan bewijs (technisch sepot) of om beleidsredenen (beleidssepot)."
+    },
+    {
+      "question": "Welk onderdeel mag in de kop van een Proces-Verbaal absoluut niet ontbreken?",
+      "modelAnswer": "De naam, het domein en de akte van beediging van de BOA. De identiteit en bevoegdheid van de opsteller zijn essentieel voor de rechtsgeldigheid van het PV."
+    },
+    {
+      "question": "Wat is het verschil tussen een 'strafbeschikking' en een 'transactie'?",
+      "modelAnswer": "Bij een transactie koop je vervolging af (vrijwillig), bij een strafbeschikking legt het OM de schuld en straf vast (eenzijdig). Een strafbeschikking wordt onherroepelijk als je niet in verzet gaat. Een transactie is vrijwillig afkopen van vervolging."
     }
   ]
 }
